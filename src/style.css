@@ -556,12 +556,14 @@ h4 {
 
 .special-item {
   position: relative;
+  width: 100%;
 }
 .special-item > a {
   text-decoration: none;
 }
 
 .special-card__img {
+  width: 100%;
   border-radius: 0.9375rem;
 }
 .special-card__title {
