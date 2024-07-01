@@ -55,11 +55,14 @@
 }
 
 .car-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid rgb(215, 215, 215);
+    gap: rem(5);
+    border: 1px solid rgb(215, 215, 215, 0.6);
     border-radius: rem(15);
+    transition: box-shadow .6s ease-out;
 
     &>p {
         margin: 0;
@@ -67,13 +70,54 @@
 
     &__class {
         color: $color-primary;
+        font-size: rem(15);
         align-self: end;
-        padding-right: 20px;
-        padding-top: 14px;
+        padding-right: rem(20);
+        padding-top: rem(15);
     }
 
     &__img {
         width: 100%;
-        padding: 0 rem(40);
+        padding: 0 rem(50);
+        height: 230px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    &__title {
+        font-size: rem(20);
+    }
+
+    &__description {
+        font-size: rem(14);
+        color: $color-text-gray;
+    }
+
+    &__line {
+        display: block;
+        width: calc(100% - 40px);
+        margin: rem(5) 0;
+        border-top: 1px solid $color-form;
+    }
+
+    &__price {
+        font-weight: 600;
+
+        &>span {
+            color: $color-primary;
+            font-size: rem(20);
+        }
+    }
+
+    &__details {
+        font-weight: 500;
+        color: $color-primary;
+        text-transform: lowercase;
+        padding-bottom: rem(15);
+    }
+
+    &:hover {
+        border: none;
+        box-shadow: 2px 2px 12px 3px rgba($color-text-gray, .15);
     }
 }
