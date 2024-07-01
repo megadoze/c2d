@@ -11,10 +11,11 @@
     padding: rem(15) rem(15);
     background-color: #fff;
     color: $color-text-black;
-    font-size: rem(16);
+    font-size: rem(15);
     border: none;
     outline: none;
     appearance: none;
+    cursor: pointer;
 
     padding-right: calc($padding-x * 2 + $icon-width);
     background-repeat: no-repeat;

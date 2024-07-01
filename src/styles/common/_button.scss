@@ -7,7 +7,7 @@
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    padding: rem(20) rem(35);
+    padding: rem(20) rem(40);
     border: none;
     border-radius: rem(6);
     color: #fff;
@@ -58,7 +58,7 @@
 .button--primary {
     color: $color-text-white;
     background-color: $color-primary;
-    width: 100%;
+    padding: rem(20) rem(60);
 
     &:hover,
     &:active {

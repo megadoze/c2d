@@ -5,6 +5,7 @@
 .cars-container {
     // display: flex;
     position: relative;
+    text-align: center;
 }
 
 .cars-img {
@@ -19,7 +20,6 @@
 
 .cars-headline {
     font-size: rem(42);
-    text-align: center;
 
     @include md {
         font-size: rem(32);
@@ -118,5 +118,13 @@
     &:hover {
         border: none;
         box-shadow: 2px 2px 12px 3px rgba($color-text-gray, .15);
+    }
+}
+
+.cars-button {
+    min-width: 300px;
+
+    @include sm {
+        width: 100%;
     }
 }
