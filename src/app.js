@@ -13,10 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
       button.classList.remove("menu__toggle--active");
       button.setAttribute("aria-expanded", "false");
       body.style.overflow = "visible";
+      body.style.height = "auto";
     } else {
       button.classList.add("menu__toggle--active");
       button.setAttribute("aria-expanded", "true");
       body.style.overflow = "hidden";
+      body.style.height = "100vh";
     }
   };
 });
