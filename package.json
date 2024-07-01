@@ -1,0 +1,12 @@
+{
+  "name": "car2drive",
+  "version": "1.0.0",
+  "description": "car rental app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Megadoze",
+  "license": "ISC"
+}

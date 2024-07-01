@@ -1,0 +1,17 @@
+@use '../variables' as *;
+@use '../functions' as *;
+
+.logo {
+    display: block;
+    font-size: rem(20);
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &__txt {
+        color: $color-primary;
+    }
+}

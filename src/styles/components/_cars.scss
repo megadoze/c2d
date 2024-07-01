@@ -1,0 +1,71 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../functions' as *;
+
+.cars-container {
+    // display: flex;
+    position: relative;
+}
+
+.cars-img {
+    width: 100%;
+    border-radius: rem(20);
+    object-fit: cover;
+}
+
+.cars-headline {
+    font-size: rem(42);
+    text-align: center;
+}
+
+.cars-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: rem(15);
+    padding: 0;
+    margin: 30px auto;
+    max-width: rem(1200);
+
+    @include md {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    @include sm {
+        grid-template-columns: 1fr;
+    }
+}
+
+.car-item {
+    @include list-reset;
+
+    &>a {
+        text-decoration: none
+    }
+
+}
+
+.car-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: rem(15);
+
+    &>p {
+        margin: 0;
+    }
+
+    &__class {
+        color: $color-primary;
+        align-self: end;
+        padding-right: 20px;
+        padding-top: 14px;
+    }
+
+    &__img {
+        width: 100%;
+        padding: 0 rem(40);
+    }
+}

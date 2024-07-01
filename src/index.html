@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta title="Car rental, Rental cars - CAR2DRIVE" />
+    <meta
+      name="description"
+      content="Car rental service in Kyiv, rent car by best price, from 15$/day, from 1 day. Delivery to address, unlimited mileage"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Car rental in Kyiv - CAR2DRIVE",
+        "description": "Car rental service in Kyiv, rent car by best price, from 15$/day, from 1 day. Delivery to address, unlimited mileage",
+        "author": {
+          "@type": "WebPage",
+          "name": "CAR2DRIVE",
+          "email": "info@car2drive.ua",
+          "telephone": "+380978886628"
+        },
+        "sameAs": ["http://facebook.com/car2driveua"]
+      }
+    </script>
+    <title>Rental cars in Kyiv - CAR2DRIVE</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="logo header__logo">
+          <!-- <img
+            src="assets/images/new-logo.svg"
+            class="logo__img"
+            alt="CAR2DRIVE"
+          /> -->
+          <p>CAR<span class="logo__txt">2</span>DRIVE</p>
+        </a>
+        <nav class="menu header__menu">
+          <button
+            class="button button--outline menu__toggle js-menu-toggle"
+            aria-expanded="false"
+            aria-controls="menu__list"
+          >
+            <span class="visually-hidden">Menu</span>
+            <span class="menu__toggle-icon">
+              <span class="line line-1"></span>
+              <span class="line line-2"></span>
+              <span class="line line-3"></span>
+            </span>
+          </button>
+          <ul id="menu__list" class="menu__list">
+            <li class="menu__item">
+              <a class="menu__item-link" href="#cars">Cars</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#special">Special</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#blog">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#faq">FAQ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#review">Review</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#about">About</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+380978886628" class="header__phone">+38 097 888 66 28</a>
+        <button type="button" class="button button--lang">EN</button>
+      </div>
+    </header>
+    <main>
+      <!-- main baner -->
+      <section class="container main-baner-container">
+        <img
+          class="baner__img"
+          src="./assets/images/content/main-baner/baner.jpg"
+          alt="car2drive"
+        />
+        <form type="submit" class="booking-form">
+          <h1 class="booking-form__title">Rental car in Kyiv</h1>
+          <!-- Location -->
+          <div class="booking-txt-block">
+            <p>Location</p>
+            <a href="#">Car rental terms</a>
+          </div>
+          <div class="select-block">
+            <select
+              name="pickup-place"
+              id="pickup-place"
+              class="select"
+              required
+            >
+              <option value="office" selected>
+                Office, Kyiv, St.Nyjnyi Val, 7-9
+              </option>
+              <option value="office">Delivery to address</option>
+            </select>
+          </div>
+
+          <!-- Pick-Up -->
+          <div class="booking-txt-block">
+            <p>Pick-Up</p>
+          </div>
+          <div class="select-block">
+            <select name="pickup-date" id="pickup-date" class="select" required>
+              <option value="1" selected>01.01.2024</option>
+              <option value="2">02.01.2024</option>
+            </select>
+            <select name="pickup-time" id="pickup-time" class="select" required>
+              <option value="10" selected>10:00</option>
+              <option value="11">11:00</option>
+            </select>
+          </div>
+          <!-- Pick-Off -->
+          <div class="booking-txt-block">
+            <p>Drop-Off</p>
+          </div>
+          <div class="select-block">
+            <select
+              name="dropoff-date"
+              id="dropoff-date"
+              class="select"
+              required
+            >
+              <option value="1" selected>01.01.2024</option>
+              <option value="2">02.01.2024</option>
+            </select>
+            <select
+              name="dropoff-time"
+              id="dropoff-time"
+              class="select"
+              required
+            >
+              <option value="10" selected>10:00</option>
+              <option value="11">11:00</option>
+            </select>
+          </div>
+          <button class="button button--primary">Search</button>
+        </form>
+      </section>
+      <!-- cars -->
+      <section class="container cars-container">
+        <img
+          class="cars-img"
+          src="./assets/images/content/cars/bmw.jpg"
+          alt="bmw"
+        />
+        <h2 class="cars-headline">Our cars</h2>
+        <ul class="cars-list">
+          <li class="car-item">
+            <a class="car-card" href="#">
+              <p class="car-card__class">economy</p>
+              <img
+                src="./assets/images/content/cars/fiesta.jpg"
+                alt="Ford Fiesta"
+                class="car-card__img"
+              />
+              <h3 class="car-card__title">Ford Fiesta</h3>
+              <p class="car-card__description">automatic, <span>gas</span></p>
+              <p class="car-card__price">from <span>24$ </span>/ per day</p>
+              <p class="car-card__details">More</p>
+            </a>
+          </li>
+          <li class="car-item">
+            <a class="car-card" href="#">
+              <p class="car-card__class">economy</p>
+              <img
+                src="./assets/images/content/cars/fiesta.jpg"
+                alt="Ford Fiesta"
+                class="car-card__img"
+              />
+              <h3 class="car-card__title">Ford Fiesta</h3>
+              <p class="car-card__description">automatic, <span>gas</span></p>
+              <p class="car-card__price">from <span>24$ </span>/ per day</p>
+              <p class="car-card__details">More</p>
+            </a>
+          </li>
+          <li class="car-item">
+            <a class="car-card" href="#">
+              <p class="car-card__class">economy</p>
+              <img
+                src="./assets/images/content/cars/fiesta.jpg"
+                alt="Ford Fiesta"
+                class="car-card__img"
+              />
+              <h3 class="car-card__title">Ford Fiesta</h3>
+              <p class="car-card__description">automatic, <span>gas</span></p>
+              <p class="car-card__price">from <span>24$ </span>/ per day</p>
+              <p class="car-card__details">More</p>
+            </a>
+          </li>
+          <li class="car-item">
+            <a class="car-card" href="#">
+              <p class="car-card__class">economy</p>
+              <img
+                src="./assets/images/content/cars/fiesta.jpg"
+                alt="Ford Fiesta"
+                class="car-card__img"
+              />
+              <h3 class="car-card__title">Ford Fiesta</h3>
+              <p class="car-card__description">automatic, <span>gas</span></p>
+              <p class="car-card__price">from <span>24$ </span>/ per day</p>
+              <p class="car-card__details">More</p>
+            </a>
+          </li>
+          <li class="car-item">
+            <a class="car-card" href="#">
+              <p class="car-card__class">economy</p>
+              <img
+                src="./assets/images/content/cars/fiesta.jpg"
+                alt="Ford Fiesta"
+                class="car-card__img"
+              />
+              <h3 class="car-card__title">Ford Fiesta</h3>
+              <p class="car-card__description">automatic, <span>gas</span></p>
+              <p class="car-card__price">from <span>24$ </span>/ per day</p>
+              <p class="car-card__details">More</p>
+            </a>
+          </li>
+          <li class="car-item">
+            <a class="car-card" href="#">
+              <p class="car-card__class">economy</p>
+              <img
+                src="./assets/images/content/cars/fiesta.jpg"
+                alt="Ford Fiesta"
+                class="car-card__img"
+              />
+              <h3 class="car-card__title">Ford Fiesta</h3>
+              <p class="car-card__description">automatic, <span>gas</span></p>
+              <p class="car-card__price">from <span>24$ </span>/ per day</p>
+              <p class="car-card__details">More</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

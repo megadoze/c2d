@@ -1,0 +1,58 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../functions' as *;
+
+.header {
+    background-color: $bg-light;
+    color: $color-text-black;
+    padding: rem(15) 0;
+    position: relative;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu {
+    flex-grow: 5;
+    padding: 0 rem(42);
+    // max-width: rem(572);
+
+    @include md {
+        flex-grow: 0;
+        padding: 0;
+        max-width: revert;
+    }
+}
+
+.header__button {
+    @include sm {
+        display: none;
+    }
+}
+
+.header__phone {
+    min-width: rem(174);
+    margin-right: rem(20);
+    flex-grow: 1;
+    text-align: end;
+
+    @include md {
+        display: none;
+    }
+}
+
+.header__phone:hover {
+    text-decoration: none;
+}
+
+.header__phone::before {
+    content: "";
+    background-image: url('assets/images/icons/icon-call.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 30px;
+}
