@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (button.classList.contains("menu__toggle--active")) {
       button.classList.remove("menu__toggle--active");
       button.setAttribute("aria-expanded", "false");
-      body.style.overflow = "inherit";
+      body.style.overflow = "visible";
     } else {
       button.classList.add("menu__toggle--active");
       button.setAttribute("aria-expanded", "true");

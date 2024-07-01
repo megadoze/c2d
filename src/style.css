@@ -459,7 +459,7 @@ h4 {
   gap: 0.3125rem;
   border: 1px solid rgba(215, 215, 215, 0.6);
   border-radius: 0.9375rem;
-  transition: box-shadow 0.6s ease-out;
+  transition: box-shadow 0.6s ease;
 }
 .car-card > p {
   margin: 0;
@@ -474,7 +474,7 @@ h4 {
 .car-card__img {
   width: 100%;
   padding: 0 1.875rem;
-  height: 230px;
+  height: 216px;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
