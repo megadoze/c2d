@@ -427,6 +427,9 @@ h4 {
 }
 
 .cars-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -447,11 +450,6 @@ h4 {
   }
 }
 
-.car-item {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 .car-item > a {
   text-decoration: none;
 }
@@ -523,4 +521,56 @@ h4 {
   .cars-button {
     width: 100%;
   }
+}
+
+.special-container {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.special-headline {
+  font-size: 2.625rem;
+}
+@media screen and (max-width: 62rem) {
+  .special-headline {
+    font-size: 2rem;
+  }
+}
+
+.special-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 75rem;
+  margin: 1.25rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+@media screen and (max-width: 48rem) {
+  .special-list {
+    flex-direction: column;
+  }
+}
+
+.special-item {
+  position: relative;
+}
+.special-item > a {
+  text-decoration: none;
+}
+
+.special-card__img {
+  border-radius: 0.9375rem;
+}
+.special-card__title {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: left;
+  width: 21.875rem;
+  color: #FFFFFF;
+  bottom: 0;
+  padding-left: 1.25rem;
 }/*# sourceMappingURL=style.css.map */
