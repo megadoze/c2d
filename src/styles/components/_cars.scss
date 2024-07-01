@@ -11,13 +11,17 @@
     width: 100%;
     border-radius: rem(20);
     object-fit: cover;
+
+    @include sm {
+        display: none;
+    }
 }
 
 .cars-headline {
     font-size: rem(42);
     text-align: center;
 
-    @include sm {
+    @include md {
         font-size: rem(32);
     }
 }

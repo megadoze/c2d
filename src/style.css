@@ -132,6 +132,8 @@ h4 {
 .select {
   width: 100%;
   padding: 0.9375rem 0.625rem;
+  background-color: #fff;
+  color: #333333;
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -312,11 +314,17 @@ h4 {
 .main-baner-container {
   position: relative;
 }
+@media screen and (max-width: 48rem) {
+  .main-baner-container {
+    height: 700px;
+  }
+}
 
 .baner__img {
   width: 100%;
   border-radius: 1.25rem;
   height: 100vh;
+  min-height: 37.5rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -325,13 +333,12 @@ h4 {
     height: auto;
     -o-object-position: left -3.75rem;
        object-position: left -3.75rem;
+    min-height: inherit;
   }
 }
 @media screen and (max-width: 48rem) {
   .baner__img {
     height: 300px;
-    -o-object-position: left -3.75rem;
-       object-position: left -3.75rem;
   }
 }
 
@@ -356,6 +363,11 @@ h4 {
     right: 0;
     width: 100%;
     opacity: 1;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .booking-form {
+    padding: 1.5625rem 1.25rem;
   }
 }
 
@@ -398,12 +410,17 @@ h4 {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 48rem) {
+  .cars-img {
+    display: none;
+  }
+}
 
 .cars-headline {
   font-size: 2.625rem;
   text-align: center;
 }
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 62rem) {
   .cars-headline {
     font-size: 2rem;
   }
