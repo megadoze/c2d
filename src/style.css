@@ -327,6 +327,13 @@ h4 {
        object-position: left -3.75rem;
   }
 }
+@media screen and (max-width: 48rem) {
+  .baner__img {
+    height: 300px;
+    -o-object-position: left -3.75rem;
+       object-position: left -3.75rem;
+  }
+}
 
 .booking-form {
   position: absolute;
@@ -395,6 +402,11 @@ h4 {
 .cars-headline {
   font-size: 2.625rem;
   text-align: center;
+}
+@media screen and (max-width: 48rem) {
+  .cars-headline {
+    font-size: 2rem;
+  }
 }
 
 .cars-list {

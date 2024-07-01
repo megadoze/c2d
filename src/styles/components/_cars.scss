@@ -16,6 +16,10 @@
 .cars-headline {
     font-size: rem(42);
     text-align: center;
+
+    @include sm {
+        font-size: rem(32);
+    }
 }
 
 .cars-list {

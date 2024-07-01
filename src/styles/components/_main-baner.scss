@@ -14,7 +14,12 @@
     object-fit: cover;
 
     @include md {
-        height:auto;
+        height: auto;
+        object-position: left rem(-60);
+    }
+
+    @include sm {
+        height: 300px;
         object-position: left rem(-60);
     }
 }
