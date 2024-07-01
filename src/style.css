@@ -473,7 +473,7 @@ h4 {
 }
 .car-card__img {
   width: 100%;
-  padding: 0 3.125rem;
+  padding: 0 1.875rem;
   height: 230px;
   -o-object-fit: contain;
      object-fit: contain;
