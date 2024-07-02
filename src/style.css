@@ -524,7 +524,7 @@ h4 {
 }
 
 .special-container {
-  margin-top: 2.5rem;
+  margin-top: 5rem;
   text-align: center;
 }
 
@@ -537,26 +537,29 @@ h4 {
   }
 }
 
-.special-list {
+.content-list {
   margin: 0;
   padding: 0;
   list-style: none;
-  max-width: 75rem;
+  max-width: 77.5rem;
   margin: 1.25rem auto;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.25rem;
+  padding: 0 1.25rem;
 }
 @media screen and (max-width: 48rem) {
-  .special-list {
+  .content-list {
     flex-direction: column;
+    gap: 1.875rem;
   }
 }
 
 .special-item {
   position: relative;
   width: 100%;
+  z-index: 1;
 }
 .special-item > a {
   text-decoration: none;
@@ -575,4 +578,44 @@ h4 {
   color: #FFFFFF;
   bottom: 0;
   padding-left: 1.25rem;
+}
+
+.news {
+  position: relative;
+  margin-top: -10rem;
+  width: 100%;
+  background-color: #FFDC42;
+  border-radius: 1.25rem;
+}
+
+.news-container {
+  padding-top: 13.75rem;
+  padding-bottom: 3.125rem;
+}
+
+.news-item {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.news-item > a {
+  text-decoration: none;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.news-card__img {
+  border-radius: 0.9375rem;
+}
+.news-card > p {
+  margin: 0;
+}
+.news-card__date {
+  padding: 0.625rem 0;
+}
+.news-card__title {
+  font-size: 1.125rem;
 }/*# sourceMappingURL=style.css.map */
