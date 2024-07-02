@@ -60,6 +60,8 @@
     &__img {
         width: 100%;
         border-radius: rem(15);
+        filter: brightness(0.9);
+        transition: filter 0.3s ease;
     }
 
     &__line {
@@ -83,10 +85,19 @@
         color: $color-text-white;
         bottom: 0;
         padding-left: rem(20);
+        transition: color 0.3s ease;
 
         @include md {
             font-size: rem(20);
         }
+    }
+
+    &:hover>&__title {
+        color: $color-form;
+    }
+
+    &:hover>&__img {
+        filter: brightness(1)
     }
 }
 
@@ -103,11 +114,11 @@
 }
 
 .news-container {
-    padding-top: rem(220);
+    padding-top: rem(200);
     padding-bottom: rem(50);
 
     @include sm {
-        padding-top: rem(140);
+        padding-top: rem(130);
     }
 }
 
@@ -128,6 +139,8 @@
 
     &__img {
         border-radius: rem(15);
+        filter: brightness(0.9);
+        transition: filter 0.3s ease;
     }
 
     &>p {
@@ -140,5 +153,9 @@
 
     &__title {
         font-size: rem(18);
+    }
+
+    &:hover>&__img {
+        filter: brightness(1)
     }
 }
