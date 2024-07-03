@@ -686,7 +686,7 @@ h4 {
 }
 @media screen and (max-width: 48rem) {
   .about-container {
-    margin-top: 1.25rem;
+    margin-top: 1.5625rem;
   }
 }
 
@@ -725,7 +725,7 @@ h4 {
   line-height: 1.4;
   letter-spacing: 0.2px;
   max-width: 31.25rem;
-  padding-top: 0.625rem;
+  padding-top: 0.3125rem;
 }
 @media screen and (max-width: 62rem) {
   .about-section__lead {

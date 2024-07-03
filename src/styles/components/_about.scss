@@ -15,7 +15,7 @@
     }
 
     @include sm {
-        margin-top: rem(20);
+        margin-top: rem(25);
     }
 }
 
@@ -53,7 +53,7 @@
         line-height: 1.4;
         letter-spacing: 0.2px;
         max-width: rem(500);
-        padding-top: rem(10);
+        padding-top: rem(5);
 
         @include md {
             font-size: rem(18);
