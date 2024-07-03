@@ -2,23 +2,135 @@
 @use '../mixins' as *;
 @use '../functions' as *;
 
-.map-container {
-    margin: rem(30) auto;
-    text-align: center;
-}
-
 .map-title {
+    text-align: center;
     font-size: rem(42);
     font-weight: 600;
-    padding-bottom: rem(30);
+    padding-bottom: rem(20);
 
     @include md {
         font-size: rem(32);
     }
 }
 
+.map-container {
+    position: relative;
+    margin: rem(20) auto;
+}
+
 .map {
     width: 100%;
     height: rem(300);
     border-radius: rem(20);
+}
+
+.map-contacts {
+    position: absolute;
+    width: rem(300);
+    top: rem(40);
+    right: rem(40);
+    background-color: rgba(255, 220, 66, 0.9);
+    border-radius: rem(15);
+    padding: rem(20) rem(20);
+    z-index: 1;
+
+    @include sm {
+        top: inherit;
+        bottom: rem(10);
+        right: inherit;
+        left: 20%;
+        width: rem(250);
+        padding: rem(15);
+    }
+
+    &>p {
+        margin: 0;
+    }
+
+    &__address {
+        font-size: rem(16);
+        line-height: 1.4;
+        padding-bottom: rem(5);
+
+        @include sm {
+            font-size: rem(15);
+        }
+
+    }
+
+    &__email {
+        font-size: rem(16);
+        line-height: 1.4;
+
+        &::before {
+            content: '';
+            background-image: url('assets/images/icons/icon-email.png');
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-right: rem(25);
+        }
+
+        @include sm {
+            font-size: rem(15);
+        }
+    }
+
+    &__phone {
+        margin: 0;
+        font-size: rem(16);
+        font-weight: 600;
+
+        &::before {
+            content: '';
+            background-image: url('assets/images/icons/icon-phone.png');
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-right: rem(25);
+        }
+
+        @include sm {
+            font-size: rem(15);
+            font-weight: 600;
+        }
+    }
+
+    &__lead {
+        padding-top: rem(5);
+        margin: 0;
+        font-size: rem(15);
+        font-weight: 300;
+        text-transform: uppercase;
+
+        @include sm {
+            font-size: rem(14);
+        }
+    }
+}
+
+.phone-container {
+    &>p {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    margin-top: rem(10);
+}
+
+.map-contacts__icon-fb {
+    width: 28px;
+    height: 28px;
+
+    @include sm {
+        width: 22px;
+        height: 22px;
+    }
 }
