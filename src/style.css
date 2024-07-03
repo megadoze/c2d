@@ -829,12 +829,16 @@ h4 {
 .map-container {
   position: relative;
   margin: 1.25rem auto;
+  overflow: hidden;
+  max-width: 87.5rem;
+  height: 18.75rem;
 }
 
 .map {
-  width: 100%;
-  height: 18.75rem;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
   border-radius: 1.25rem;
+  margin: -2px;
 }
 
 .map-contacts {
@@ -877,10 +881,9 @@ h4 {
 .map-contacts__email::before {
   content: "";
   background-image: url("assets/images/icons/icon-email.png");
-  background-position: left;
+  background-position: left 5px;
   background-repeat: no-repeat;
-  background-size: contain;
-  padding-right: 1.5625rem;
+  padding-right: 1.375rem;
 }
 @media screen and (max-width: 48rem) {
   .map-contacts__email {

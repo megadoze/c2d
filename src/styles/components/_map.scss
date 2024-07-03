@@ -16,12 +16,16 @@
 .map-container {
     position: relative;
     margin: rem(20) auto;
+    overflow: hidden;
+    max-width: rem(1400);
+    height: rem(300);
 }
 
 .map {
-    width: 100%;
-    height: rem(300);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
     border-radius: rem(20);
+    margin: -2px;
 }
 
 .map-contacts {
@@ -65,10 +69,9 @@
         &::before {
             content: '';
             background-image: url('assets/images/icons/icon-email.png');
-            background-position: left;
+            background-position: left 5px;
             background-repeat: no-repeat;
-            background-size: contain;
-            padding-right: rem(25);
+            padding-right: rem(22);
         }
 
         @include sm {
