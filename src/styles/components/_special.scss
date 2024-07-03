@@ -80,6 +80,8 @@
         position: absolute;
         font-size: rem(24);
         font-weight: 600;
+        letter-spacing: 0.4px;
+        line-height: 1.2;
         text-align: left;
         width: rem(350);
         color: $color-text-white;
@@ -154,6 +156,8 @@
 
     &__title {
         font-size: rem(18);
+        letter-spacing: 0.2px;
+        line-height: 1.2;
     }
 
     &:hover>&__img {
