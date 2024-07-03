@@ -635,6 +635,7 @@ h4 {
 @media screen and (max-width: 48rem) {
   .news-container {
     padding-top: 8.125rem;
+    padding-bottom: 1.875rem;
   }
 }
 
@@ -683,13 +684,18 @@ h4 {
     padding: 0 1.25rem;
   }
 }
+@media screen and (max-width: 48rem) {
+  .about-container {
+    margin-top: 1.25rem;
+  }
+}
 
 .about-section {
   display: flex;
   flex-direction: column;
   gap: 1.5625rem;
   max-width: 60%;
-  padding: 2.5rem;
+  padding: 1.25rem;
 }
 @media screen and (max-width: 62rem) {
   .about-section {
@@ -751,7 +757,7 @@ h4 {
   max-width: 40%;
   width: 100%;
   flex-grow: 1;
-  padding: 2.5rem;
+  padding: 1.25rem;
 }
 @media screen and (max-width: 62rem) {
   .about-advantages {
@@ -772,7 +778,7 @@ h4 {
 }
 @media screen and (max-width: 62rem) {
   .about-advantages__title {
-    font-size: 1.375rem;
+    font-size: 1.625rem;
   }
 }
 @media screen and (max-width: 62rem) {
