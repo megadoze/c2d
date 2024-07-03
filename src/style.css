@@ -775,6 +775,7 @@ h4 {
 .about-advantages__title {
   font-size: 2rem;
   font-weight: 600;
+  line-height: 1.6;
 }
 @media screen and (max-width: 62rem) {
   .about-advantages__title {
@@ -811,4 +812,26 @@ h4 {
 }
 .advantages-item:not(:last-child) {
   border-bottom: 2px solid #fff;
+}
+
+.map-container {
+  margin: 1.875rem auto;
+  text-align: center;
+}
+
+.map-title {
+  font-size: 2.625rem;
+  font-weight: 600;
+  padding-bottom: 1.875rem;
+}
+@media screen and (max-width: 62rem) {
+  .map-title {
+    font-size: 2rem;
+  }
+}
+
+.map {
+  width: 100%;
+  height: 18.75rem;
+  border-radius: 1.25rem;
 }/*# sourceMappingURL=style.css.map */

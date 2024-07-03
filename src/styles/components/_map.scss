@@ -1,0 +1,24 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../functions' as *;
+
+.map-container {
+    margin: rem(30) auto;
+    text-align: center;
+}
+
+.map-title {
+    font-size: rem(42);
+    font-weight: 600;
+    padding-bottom: rem(30);
+
+    @include md {
+        font-size: rem(32);
+    }
+}
+
+.map {
+    width: 100%;
+    height: rem(300);
+    border-radius: rem(20);
+}
