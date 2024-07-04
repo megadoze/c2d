@@ -771,6 +771,11 @@ h4 {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 48rem) {
+  .about-section__description {
+    font-size: 1rem;
+  }
+}
 .about-section__img {
   margin-top: 1.25rem;
 }

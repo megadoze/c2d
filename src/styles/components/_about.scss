@@ -77,6 +77,10 @@
             align-self: center;
             max-width: 100%;
         }
+
+        @include sm {
+            font-size: rem(16);
+        }
     }
 
     &__img {
