@@ -685,7 +685,7 @@ h4 {
   padding: 0.625rem 0;
 }
 .news-card__title {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   letter-spacing: 0.2px;
   line-height: 1.2;
 }
@@ -795,13 +795,12 @@ h4 {
   margin: 0;
 }
 .about-advantages__title {
-  font-size: 2rem;
+  font-size: 2.625rem;
   font-weight: 600;
-  line-height: 1.6;
 }
 @media screen and (max-width: 62rem) {
   .about-advantages__title {
-    font-size: 1.625rem;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 62rem) {

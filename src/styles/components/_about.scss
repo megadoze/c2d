@@ -105,12 +105,11 @@
     }
 
     &__title {
-        font-size: rem(32);
+        font-size: rem(42);
         font-weight: 600;
-        line-height: 1.6;
 
         @include md {
-            font-size: rem(26);
+            font-size: rem(32);
         }
 
         @include md {
