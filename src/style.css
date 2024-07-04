@@ -829,6 +829,132 @@ h4 {
   border-bottom: 2px solid #fff;
 }
 
+.faq-container {
+  position: relative;
+}
+
+.faq-title {
+  font-size: 2.625rem;
+  font-weight: 600;
+  text-align: center;
+}
+@media screen and (max-width: 62rem) {
+  .faq-title {
+    font-size: 2rem;
+  }
+}
+
+.accordion-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 67.5rem;
+  margin: 1.875rem auto;
+  border: 1px solid rgba(215, 215, 215, 0.6);
+  border-radius: 0.9375rem;
+  overflow: hidden;
+}
+
+.accordion-list__item:not(:last-child) {
+  border-bottom: 1px solid rgba(215, 215, 215, 0.6);
+}
+
+.accordion {
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.accordion__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.875rem;
+  gap: 1rem;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+.accordion__header::marker {
+  display: none;
+}
+.accordion__header::before {
+  content: "";
+  display: block;
+  width: 0.75rem;
+  height: 0.4375rem;
+  position: absolute;
+  top: calc(50% - 0.21875rem);
+  right: 2.4375rem;
+  background-image: url("assets/images/icons/icon-arrow-accordion.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(0);
+  transition: transform 0.25s ease;
+}
+.accordion__header::after {
+  content: "";
+  flex-shrink: 0;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: #EE653A;
+  border-radius: 50%;
+}
+@media screen and (max-width: 48rem) {
+  .accordion__header {
+    padding: 1.6875rem;
+  }
+  .accordion__header::before {
+    right: 2.25rem;
+  }
+}
+
+.accordion__title {
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 1.33;
+  margin: 0;
+}
+@media screen and (max-width: 48rem) {
+  .accordion__title {
+    font-size: 1.25rem;
+  }
+}
+
+.accordion__body {
+  padding: 0 3.125rem 1.25rem;
+  color: #333333;
+  line-height: 1.5;
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.4s ease;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+.accordion__body p {
+  margin-top: 0;
+}
+@media screen and (max-width: 48rem) {
+  .accordion__body {
+    padding: 0 1.75rem 1.25rem;
+  }
+}
+
+.accordion[open] {
+  background-color: #fff;
+  border-color: transparent;
+}
+.accordion[open] .accordion__body {
+  opacity: 1;
+  max-height: revert;
+}
+.accordion[open] .accordion__header {
+  color: #333333;
+}
+.accordion[open] .accordion__header::before {
+  transform: rotate(180deg);
+}
+
 .review-container {
   padding-top: 1.25rem;
   padding-bottom: 3.125rem;

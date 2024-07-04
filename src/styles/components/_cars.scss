@@ -61,7 +61,7 @@
     flex-direction: column;
     align-items: center;
     gap: rem(5);
-    border: 1px solid rgb(215, 215, 215, 0.6);
+    border: 1px solid $color-gray;
     border-radius: rem(15);
     transition: box-shadow .6s ease;
 

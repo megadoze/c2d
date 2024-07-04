@@ -1,0 +1,135 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../functions' as *;
+
+.faq-container {
+    position: relative;
+}
+
+.faq-title {
+    font-size: rem(42);
+    font-weight: 600;
+    text-align: center;
+
+    @include md {
+        font-size: rem(32);
+    }
+}
+
+.accordion-list {
+    @include list-reset;
+
+    max-width: rem(1080);
+    margin: rem(30) auto;
+    border: 1px solid $color-gray;
+    border-radius: rem(15);
+    overflow: hidden;
+}
+
+.accordion-list__item:not(:last-child) {
+    border-bottom: 1px solid $color-gray;
+}
+
+$accordion-icon-size: rem(30);
+
+.accordion {
+    background-color: $color-white;
+    transition: background-color 0.3s ease;
+}
+
+.accordion__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // padding: rem(40) rem(34) rem(40) rem(48);
+    padding: rem(30);
+    gap: rem(16);
+    position: relative;
+    cursor: pointer;
+    transition: color .4s ease;
+
+    &::marker {
+        display: none;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: rem(12);
+        height: rem(7);
+        position: absolute;
+        top: calc(50% - rem(3.5));
+        right: rem(39);
+        background-image: url('assets/images/icons/icon-arrow-accordion.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(0);
+        transition: transform .25s ease;
+    }
+
+    &::after {
+        content: '';
+        flex-shrink: 0;
+        width: $accordion-icon-size;
+        height: $accordion-icon-size;
+        background-color: $color-primary;
+        border-radius: 50%;
+    }
+
+    @include sm {
+        padding: rem(27);
+
+        &::before {
+            right: rem(36);
+        }
+    }
+}
+
+.accordion__title {
+    font-weight: 500;
+    font-size: rem(22);
+    line-height: 1.33;
+    margin: 0;
+
+    @include sm {
+        font-size: rem(20);
+    }
+}
+
+.accordion__body {
+    padding: 0 rem(50) rem(20);
+    color: $color-text-black;
+    line-height: 1.5;
+    opacity: 0;
+    max-height: 0;
+    transition: opacity .4s ease;
+    font-size: rem(18);
+    font-weight: 300;
+
+    p {
+        margin-top: 0;
+    }
+
+    @include sm {
+        padding: 0 rem(28) rem(20);
+    }
+}
+
+.accordion[open] {
+    background-color: #fff;
+    border-color: transparent;
+
+    .accordion__body {
+        opacity: 1;
+        max-height: revert;
+    }
+
+    .accordion__header {
+        color: $color-text-black;
+
+        &::before {
+            transform: rotate(180deg);
+        }
+    }
+}
