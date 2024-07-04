@@ -58,7 +58,7 @@
 
             @include sm {
                 font-size: rem(20);
-                padding: rem(10) 0;
+                padding: rem(10) rem(6) rem(10);
                 text-align: center;
             }
         }
