@@ -48,6 +48,14 @@ $accordion-icon-size: rem(28);
     cursor: pointer;
     transition: color .4s ease;
 
+    &::-webkit-details-marker {
+        display: none;
+    }
+
+    &::-moz-list-bullet {
+        list-style-type: none;
+    }
+
     &::marker {
         display: none;
     }

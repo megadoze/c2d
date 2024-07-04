@@ -874,6 +874,12 @@ h4 {
   cursor: pointer;
   transition: color 0.4s ease;
 }
+.accordion__header::-webkit-details-marker {
+  display: none;
+}
+.accordion__header::-moz-list-bullet {
+  list-style-type: none;
+}
 .accordion__header::marker {
   display: none;
 }
