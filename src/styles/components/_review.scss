@@ -3,7 +3,7 @@
 @use '../functions' as *;
 
 .review-container {
-    padding-top: rem(30);
+    padding-top: rem(20);
     padding-bottom: rem(50);
 }
 
@@ -58,6 +58,7 @@
     max-width: rem(1080);
     margin: 0 auto;
     overflow-x: scroll;
+    scrollbar-width: none ;
 }
 
 .review-item {
