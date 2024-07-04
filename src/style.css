@@ -884,7 +884,7 @@ h4 {
   height: 0.4375rem;
   position: absolute;
   top: calc(50% - 0.21875rem);
-  right: 2.4375rem;
+  right: 2.375rem;
   background-image: url("assets/images/icons/icon-arrow-accordion.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -895,9 +895,9 @@ h4 {
 .accordion__header::after {
   content: "";
   flex-shrink: 0;
-  width: 1.875rem;
-  height: 1.875rem;
-  background-color: #EE653A;
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: #ff8759;
   border-radius: 50%;
 }
 @media screen and (max-width: 48rem) {
@@ -905,7 +905,7 @@ h4 {
     padding: 1.6875rem;
   }
   .accordion__header::before {
-    right: 2.25rem;
+    right: 2.1875rem;
   }
 }
 
@@ -982,6 +982,12 @@ h4 {
   border-radius: 0.9375rem;
   padding: 0.9375rem 1.5625rem;
 }
+@media screen and (max-width: 48rem) {
+  .review-rating {
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+}
 .review-rating p {
   margin: 0;
 }
@@ -993,9 +999,25 @@ h4 {
 .review-rating .logo-box .rating-subtitle {
   font-size: 1.25rem;
 }
-.review-rating__counter {
+.review-rating .rating-box {
+  display: inline-flex;
+  align-items: center;
+}
+.review-rating .rating-box__counter {
   font-size: 1.5rem;
   font-weight: 600;
+  padding-right: 0.375rem;
+}
+@media screen and (max-width: 48rem) {
+  .review-rating .rating-box__counter {
+    font-size: 1.25rem;
+    padding: 0.625rem 0;
+    text-align: center;
+  }
+}
+.review-rating .rating-box__img {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .review-list {
@@ -1003,7 +1025,6 @@ h4 {
   padding: 0;
   list-style: none;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   gap: 1.25rem;
   max-width: 67.5rem;
@@ -1024,7 +1045,6 @@ h4 {
   padding: 1.25rem;
   border-radius: 0.9375rem;
   min-width: 21.666875rem;
-  height: 18.75rem;
 }
 .review-item p {
   margin: 0;
@@ -1035,13 +1055,31 @@ h4 {
 }
 .review-item__name {
   font-size: 1rem;
+  padding-top: 0.5rem;
   padding-bottom: 0.3125rem;
 }
-.review-item__rating {
+.review-item__rating-box {
   padding-bottom: 0.9375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.review-item__rating-box-img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.review-item .container-review-text {
+  width: 100%;
+  max-height: 8.4375rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+  text-align: center;
 }
 .review-item__text {
-  padding-bottom: 1.25rem;
+  letter-spacing: 0.2px;
+  line-height: 1.2;
+  color: #585858;
 }
 
 .google-post {

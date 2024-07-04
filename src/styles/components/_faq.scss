@@ -30,7 +30,7 @@
     border-bottom: 1px solid $color-gray;
 }
 
-$accordion-icon-size: rem(30);
+$accordion-icon-size: rem(28);
 
 .accordion {
     background-color: $color-white;
@@ -59,7 +59,7 @@ $accordion-icon-size: rem(30);
         height: rem(7);
         position: absolute;
         top: calc(50% - rem(3.5));
-        right: rem(39);
+        right: rem(38);
         background-image: url('assets/images/icons/icon-arrow-accordion.svg');
         background-position: center;
         background-repeat: no-repeat;
@@ -73,7 +73,7 @@ $accordion-icon-size: rem(30);
         flex-shrink: 0;
         width: $accordion-icon-size;
         height: $accordion-icon-size;
-        background-color: $color-primary;
+        background-color: #ff8759;
         border-radius: 50%;
     }
 
@@ -81,7 +81,7 @@ $accordion-icon-size: rem(30);
         padding: rem(27);
 
         &::before {
-            right: rem(36);
+            right: rem(35);
         }
     }
 }
