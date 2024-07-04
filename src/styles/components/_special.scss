@@ -90,6 +90,12 @@
         transition: color 0.3s ease;
 
         @include md {
+            font-size: rem(22);
+            padding-right: 45px;
+        }
+
+        @include sm {
+            padding-right: 45px;
             font-size: rem(20);
         }
     }
