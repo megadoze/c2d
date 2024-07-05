@@ -354,8 +354,7 @@ h4 {
   top: 6.25rem;
   right: 6.25rem;
   width: 26.75rem;
-  background-color: #FFDC42;
-  opacity: 0.9;
+  background-color: rgba(255, 220, 66, 0.9);
   border-radius: 0.9375rem;
   padding: 2.5rem;
   display: flex;
@@ -372,7 +371,7 @@ h4 {
     left: 0;
     right: 0;
     width: 100%;
-    opacity: 1;
+    background-color: #ffdc42;
   }
 }
 @media screen and (max-width: 48rem) {
