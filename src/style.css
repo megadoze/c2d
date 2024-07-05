@@ -346,6 +346,8 @@ h4 {
 @media screen and (max-width: 48rem) {
   .baner__img {
     height: 300px;
+    position: sticky;
+    top: 1.25rem;
   }
 }
 
@@ -355,7 +357,7 @@ h4 {
   right: 6.25rem;
   width: 26.75rem;
   background-color: rgba(255, 220, 66, 0.9);
-  border-radius: 0.9375rem;
+  border-radius: 1.25rem;
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
@@ -377,6 +379,7 @@ h4 {
 @media screen and (max-width: 48rem) {
   .booking-form {
     padding: 1.5625rem 1.25rem;
+    margin-top: 0.9375rem;
   }
 }
 
