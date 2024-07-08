@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Отслеживаем пересечение блока границ шапки сайта
   const options = {
     root: document.querySelector(".body"),
-    rootMargin: "-83px 0px 0px 0px",
-    threshold: 1,
+    rootMargin: "-524px 0px 0px 0px",
+    threshold: 0,
   };
 
   const callback = function (entries, observer) {
@@ -34,9 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) {
         entry.target.classList.add("cross");
-        header.classList.add("animation");
+        // header.classList.add("animation");
         console.log("Пересек!");
-        return;
+        return header.classList.add("animation");
       } else {
         entry.target.classList.remove("cross");
         header.classList.remove("animation");
