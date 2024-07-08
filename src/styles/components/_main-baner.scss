@@ -8,6 +8,7 @@
 
     @include sm {
         height: 700px;
+        margin-bottom: rem(30);
     }
 }
 
@@ -20,13 +21,13 @@
 
     @include md {
         height: auto;
-        object-position: left rem(-60);
+        object-position: left;
         min-height: inherit;
     }
 
     @include sm {
-        height: 306px;
-        position: sticky;
-        top: rem(83);
+        height: rem(349);
+        // position: sticky;
+        // top: rem(83);
     }
 }

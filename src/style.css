@@ -159,20 +159,6 @@ h4 {
   padding: 0.625rem 0;
   position: relative;
 }
-@media screen and (max-width: 48rem) {
-  .header {
-    position: sticky;
-    top: 0;
-    height: 5.1875rem;
-  }
-}
-
-@media screen and (max-width: 48rem) {
-  .animation {
-    position: relative;
-    top: 14.125rem;
-  }
-}
 
 .header__container {
   display: flex;
@@ -339,6 +325,7 @@ h4 {
 @media screen and (max-width: 48rem) {
   .main-baner-container {
     height: 700px;
+    margin-bottom: 1.875rem;
   }
 }
 
@@ -352,16 +339,14 @@ h4 {
 @media screen and (max-width: 62rem) {
   .baner__img {
     height: auto;
-    -o-object-position: left -3.75rem;
-       object-position: left -3.75rem;
+    -o-object-position: left;
+       object-position: left;
     min-height: inherit;
   }
 }
 @media screen and (max-width: 48rem) {
   .baner__img {
-    height: 306px;
-    position: sticky;
-    top: 5.1875rem;
+    height: 21.8125rem;
   }
 }
 
@@ -495,6 +480,7 @@ h4 {
   border: 1px solid rgba(215, 215, 215, 0.6);
   border-radius: 0.9375rem;
   transition: box-shadow 0.6s ease;
+  background-color: #fff;
 }
 .car-card > p {
   margin: 0;

@@ -7,20 +7,14 @@
     color: $color-text-black;
     padding: rem(10) 0;
     position: relative;
-
-    @include sm {
-        position: sticky;
-        top: 0;
-        height: rem(83);
-    }
 }
 
-.animation {
-    @include sm {
-        position: relative;
-        top: rem(226);
-    }
-}
+// .animation {
+//     @include sm {
+//         position: relative;
+//         top: rem(226);
+//     }
+// }
 
 .header__container {
     display: flex;
