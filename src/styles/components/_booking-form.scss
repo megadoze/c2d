@@ -37,6 +37,10 @@
     font-size: rem(32);
     font-weight: 600;
     padding-bottom: rem(20);
+
+    @include sm {
+        font-size: rem(26);
+    }
 }
 
 .booking-txt-block {

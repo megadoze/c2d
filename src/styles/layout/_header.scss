@@ -17,7 +17,7 @@
 .animation {
     @include sm {
         position: relative;
-        top: 219px;
+        top: rem(220);
     }
 }
 
