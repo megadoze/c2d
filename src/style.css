@@ -163,13 +163,14 @@ h4 {
   .header {
     position: sticky;
     top: 0;
+    height: 5.1875rem;
   }
 }
 
 @media screen and (max-width: 48rem) {
   .animation {
     position: relative;
-    top: 13.8125rem;
+    top: 14.125rem;
   }
 }
 
@@ -358,7 +359,7 @@ h4 {
 }
 @media screen and (max-width: 48rem) {
   .baner__img {
-    height: 300px;
+    height: 306px;
     position: sticky;
     top: 5.1875rem;
   }
