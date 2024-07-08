@@ -159,6 +159,19 @@ h4 {
   padding: 0.625rem 0;
   position: relative;
 }
+@media screen and (max-width: 48rem) {
+  .header {
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .animation {
+    position: relative;
+    top: 219px;
+  }
+}
 
 .header__container {
   display: flex;
@@ -347,7 +360,7 @@ h4 {
   .baner__img {
     height: 300px;
     position: sticky;
-    top: 1.25rem;
+    top: 5.1875rem;
   }
 }
 

@@ -7,6 +7,18 @@
     color: $color-text-black;
     padding: rem(10) 0;
     position: relative;
+
+    @include sm {
+        position: sticky;
+        top: 0;
+    }
+}
+
+.animation {
+    @include sm {
+        position: relative;
+        top: 219px;
+    }
 }
 
 .header__container {
