@@ -1,7 +1,7 @@
 // Отслеживаем пересечение блока границ шапки сайта
 const options = {
   root: document.querySelector(".body"),
-  rootMargin: "-156px 0px 0px 0px",
+  rootMargin: "-156px 0px 1000px 0px",
   threshold: 0,
 };
 
