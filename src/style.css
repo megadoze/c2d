@@ -384,7 +384,7 @@ h4 {
 @media screen and (max-width: 62rem) {
   .booking-form {
     position: relative;
-    top: -98px;
+    top: -6.375rem;
     left: 0;
     right: 0;
     width: 100%;
@@ -394,7 +394,7 @@ h4 {
 @media screen and (max-width: 48rem) {
   .booking-form {
     padding: 1.5625rem 1.25rem;
-    margin-top: 0.9375rem;
+    margin-top: 1rem;
   }
 }
 
