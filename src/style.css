@@ -157,6 +157,7 @@ h4 {
   color: #333333;
   padding: 0.625rem 0;
   position: relative;
+  z-index: 1;
 }
 @media screen and (max-width: 48rem) {
   .header {

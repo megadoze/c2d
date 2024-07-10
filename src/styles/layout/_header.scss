@@ -6,6 +6,7 @@
     color: $color-text-black;
     padding: rem(10) 0;
     position: relative;
+    z-index: 1;
 
     @include sm {
         position: sticky;
