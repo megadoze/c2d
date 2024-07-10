@@ -27,7 +27,12 @@
 
     @include sm {
         height: rem(349);
-        // position: sticky;
-        // top: rem(83);
+        position: sticky;
+        top: 88px;
     }
+}
+
+.main-section {
+    position: relative;
+    height: 264px;
 }

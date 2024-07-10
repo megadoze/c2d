@@ -154,16 +154,22 @@ h4 {
 }
 
 .header {
-  background-color: #fff;
   color: #333333;
   padding: 0.625rem 0;
   position: relative;
+}
+@media screen and (max-width: 48rem) {
+  .header {
+    position: sticky;
+    top: 0;
+  }
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
 }
 
 .header__menu {
@@ -347,7 +353,14 @@ h4 {
 @media screen and (max-width: 48rem) {
   .baner__img {
     height: 21.8125rem;
+    position: sticky;
+    top: 88px;
   }
+}
+
+.main-section {
+  position: relative;
+  height: 264px;
 }
 
 .booking-form {
