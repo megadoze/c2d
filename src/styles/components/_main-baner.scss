@@ -33,6 +33,8 @@
 }
 
 .main-section {
-    position: relative;
-    height: 264px;
+    @include sm {
+        position: relative;
+        height: 264px;
+    }
 }

@@ -359,9 +359,11 @@ h4 {
   }
 }
 
-.main-section {
-  position: relative;
-  height: 264px;
+@media screen and (max-width: 48rem) {
+  .main-section {
+    position: relative;
+    height: 264px;
+  }
 }
 
 .booking-form {
