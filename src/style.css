@@ -163,6 +163,7 @@ h4 {
   .header {
     position: sticky;
     top: 0;
+    padding: 0;
   }
 }
 
