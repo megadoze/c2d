@@ -1,30 +1,30 @@
 // Отслеживаем пересечение блока границ шапки сайта
-const options = {
-  root: document.querySelector(".body"),
-  rootMargin: "-156px 0px 1000px 0px",
-  threshold: 0,
-};
+// const options = {
+//   root: document.querySelector(".body"),
+//   rootMargin: "-156px 0px 1000px 0px",
+//   threshold: 0,
+// };
 
-const callback = function (entries, observer) {
-  const header = document.querySelector(".header");
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      entry.target.classList.add("cross");
-      header.classList.add("animation");
-      console.log("Пересек!");
-      return;
-    } else {
-      entry.target.classList.remove("cross");
-      header.classList.remove("animation");
-      console.log("не пересек");
-    }
-  });
-};
+// const callback = function (entries, observer) {
+//   const header = document.querySelector(".header");
+//   entries.forEach((entry) => {
+//     if (!entry.isIntersecting) {
+//       entry.target.classList.add("cross");
+//       header.classList.add("animation");
+//       console.log("Пересек!");
+//       return;
+//     } else {
+//       entry.target.classList.remove("cross");
+//       header.classList.remove("animation");
+//       console.log("не пересек");
+//     }
+//   });
+// };
 
-const Observer = new IntersectionObserver(callback, options);
-const target = document.querySelector(".booking-form__title");
+// const Observer = new IntersectionObserver(callback, options);
+// const target = document.querySelector(".booking-form__title");
 
-Observer.observe(target);
+// Observer.observe(target);
 
 // Ждем пока закрузится вся страница
 document.addEventListener("DOMContentLoaded", () => {

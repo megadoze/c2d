@@ -5,8 +5,9 @@
 .menu__list {
     @include list-reset;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
+    height: rem(16);
     // gap: 20px;
 
     @include md {
@@ -31,6 +32,10 @@
 }
 
 .menu__item {
+    &>a {
+        text-decoration: solid;
+    }
+
     @include md {
         // &:not(:last-child) {
         //     border-bottom: rem(1) solid rgba(255, 255, 255, 0.5);
@@ -40,11 +45,33 @@
 }
 
 .menu__item-link {
+
     @include md {
         display: block;
         padding: rem(16) 0;
         text-align: center;
         color: $color-text-white;
+    }
+
+    &::after {
+        content: "";
+        border-bottom: 2px solid $color-primary;
+        display: block;
+        margin-top: 2px;
+        transform: scaleX(0);
+
+        @include md {
+            display: none;
+        }
+    }
+
+    &:hover::after {
+        transition: transform 0.3s ease;
+        transform: scaleX(100%);
+    }
+
+    &:focus::after {
+        transform: scaleX(100%);
     }
 }
 
