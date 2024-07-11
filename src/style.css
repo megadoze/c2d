@@ -976,9 +976,7 @@ h4 {
   color: #333333;
   line-height: 1.5;
   letter-spacing: 0.2px;
-  opacity: 0;
   max-height: 0;
-  transition: opacity 0.4s ease;
   font-size: 1.125rem;
   font-weight: 300;
 }
@@ -996,7 +994,6 @@ h4 {
   border-color: transparent;
 }
 .accordion[open] .accordion__body {
-  opacity: 1;
   max-height: revert;
 }
 .accordion[open] .accordion__header {
