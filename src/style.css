@@ -196,7 +196,6 @@ h4 {
 .header__phone {
   min-width: 10.875rem;
   margin-right: 1.25rem;
-  flex-grow: 1;
   text-align: end;
 }
 @media screen and (max-width: 62rem) {

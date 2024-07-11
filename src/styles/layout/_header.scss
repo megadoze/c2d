@@ -51,7 +51,7 @@
 .header__phone {
     min-width: rem(174);
     margin-right: rem(20);
-    flex-grow: 1;
+    // flex-grow: 1;
     text-align: end;
 
     @include md {
