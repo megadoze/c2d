@@ -31,6 +31,7 @@
 }
 
 $accordion-icon-size: rem(28);
+$accordion-icon-size--sm: rem(26);
 
 .accordion {
     background-color: $color-white;
@@ -87,8 +88,16 @@ $accordion-icon-size: rem(28);
     @include sm {
         padding: rem(27);
 
+        &::after {
+            width: $accordion-icon-size--sm;
+            height: $accordion-icon-size--sm;
+        }
+
         &::before {
+            top: calc(50% - rem(3));
             right: rem(35);
+            width: rem(10);
+            height: rem(6);
         }
     }
 }

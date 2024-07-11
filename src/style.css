@@ -946,8 +946,15 @@ h4 {
   .accordion__header {
     padding: 1.6875rem;
   }
+  .accordion__header::after {
+    width: 1.625rem;
+    height: 1.625rem;
+  }
   .accordion__header::before {
+    top: calc(50% - 0.1875rem);
     right: 2.1875rem;
+    width: 0.625rem;
+    height: 0.375rem;
   }
 }
 
