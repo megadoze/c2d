@@ -34,8 +34,8 @@ $accordion-icon-size: rem(28);
 $accordion-icon-size--sm: rem(26);
 
 .accordion {
-    background-color: $color-white;
-    transition: background-color 0.3s ease;
+    // background-color: $color-white;
+    // transition: background-color 0.3s ease;
 }
 
 .accordion__header {
@@ -46,7 +46,7 @@ $accordion-icon-size--sm: rem(26);
     gap: rem(16);
     position: relative;
     cursor: pointer;
-    transition: color .4s ease;
+    // transition: color .4s ease;
 
     &::-webkit-details-marker {
         display: none;
@@ -137,7 +137,7 @@ $accordion-icon-size--sm: rem(26);
 
 .accordion[open] {
     // background-color: #fff;
-    border-color: transparent;
+    // border-color: transparent;
 
     .accordion__body {
         // opacity: 1;

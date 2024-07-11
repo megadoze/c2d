@@ -895,11 +895,6 @@ h4 {
   border-bottom: 1px solid rgba(215, 215, 215, 0.6);
 }
 
-.accordion {
-  background-color: #fff;
-  transition: background-color 0.3s ease;
-}
-
 .accordion__header {
   display: flex;
   align-items: center;
@@ -908,7 +903,6 @@ h4 {
   gap: 1rem;
   position: relative;
   cursor: pointer;
-  transition: color 0.4s ease;
 }
 .accordion__header::-webkit-details-marker {
   display: none;
@@ -990,9 +984,6 @@ h4 {
   }
 }
 
-.accordion[open] {
-  border-color: transparent;
-}
 .accordion[open] .accordion__body {
   max-height: revert;
 }
