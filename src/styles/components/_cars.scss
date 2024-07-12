@@ -8,6 +8,8 @@
     text-align: center;
 }
 
+// main page
+
 .cars-img {
     width: 100%;
     border-radius: rem(20);
@@ -17,6 +19,81 @@
         display: none;
     }
 }
+
+// cars page
+
+.steps-list {
+    @include list-reset;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: rem(1400);
+    margin: rem(16) 0;
+    padding: rem(10) rem(20);
+    background-color: $bg-gray;
+    border-radius: rem(15);
+
+    @include md {
+        display: none;
+    }
+}
+
+.step-mobile {
+    display: none;
+
+    @include md {
+        display: flex;
+        align-items: center;
+        gap: rem(5);
+        margin: rem(16) 0;
+        // margin-bottom: rem(20);
+        padding: rem(5) rem(20);
+        background-color: $bg-gray;
+        border-radius: rem(15);
+    }
+
+    @include sm {
+        margin: rem(10) 0;
+    }
+}
+
+.step-item {
+    display: contents;
+
+    &__img {
+        margin: 0 auto;
+        padding: 0 rem(5);
+        width: rem(30);
+    }
+
+    &__img--mobile {
+        margin: 0;
+        padding: 0 rem(5);
+        width: rem(30);
+        rotate: 180deg;
+    }
+}
+
+.step-item__name {
+    line-height: 1.4;
+    padding: 0 rem(5);
+
+    &--checked {
+        color: $color-primary;
+
+        &::before {
+            content: "";
+            background-image: url('assets/images/icons/icon-step.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-right: rem(34);
+        }
+    }
+}
+
+// main & cars pages
 
 .cars-headline {
     font-size: rem(42);

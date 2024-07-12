@@ -65,6 +65,126 @@
     </header>
     <!-- cars -->
     <section class="container cars-container">
+      <ul class="steps-list">
+        <li class="step-item">
+          <p class="step-item__name step-item__name--checked">
+            Step 1. Rental options
+          </p>
+          <img
+            class="step-item__img"
+            src="./assets/images/icons/icon-step_arrow.svg"
+            alt=""
+          />
+        </li>
+        <li class="step-item">
+          <p class="step-item__name step-item__name--current">
+            Step 2. Car selection
+          </p>
+          <img
+            class="step-item__img"
+            src="./assets/images/icons/icon-step_arrow.svg"
+            alt=""
+          />
+        </li>
+        <li class="step-item">
+          <p class="step-item__name step-item__name--future">
+            Step 3. Price and additional services
+          </p>
+          <img
+            class="step-item__img"
+            src="./assets/images/icons/icon-step_arrow.svg"
+            alt=""
+          />
+        </li>
+        <li class="step-item">
+          <p class="step-item__name step-item__name--future">
+            Step 4. Your data
+          </p>
+        </li>
+      </ul>
+      <div class="step-mobile">
+        <img
+          class="step-item__img--mobile"
+          src="./assets/images/icons/icon-step_arrow.svg"
+          alt=""
+        />
+        <p class="step-item__name step-item__name--current">
+          Step 2 from 4. Car selection
+        </p>
+      </div>
+      <form type="submit" class="booking-form--cars-page">
+        <!-- Location -->
+        <div class="booking-txt-block--cars-page">
+          <p>Location</p>
+          <div class="select-block">
+            <select
+              name="pickup-place"
+              id="pickup-place"
+              class="select"
+              required
+            >
+              <option value="office" selected>
+                Office, Kyiv, St.Nyjnyi Val, 7-9
+              </option>
+              <option value="office">Delivery to address</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Pick-Up -->
+        <div class="booking-txt-block--cars-page">
+          <p>Pick-Up</p>
+          <div class="select-block">
+            <select name="pickup-date" id="pickup-date" class="select" required>
+              <option value="1" selected>01.01.2024</option>
+              <option value="2">02.01.2024</option>
+            </select>
+            <select name="pickup-time" id="pickup-time" class="select" required>
+              <option value="10" selected>10:00</option>
+              <option value="11">11:00</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Pick-Off -->
+        <div class="booking-txt-block--cars-page">
+          <p>Drop-Off</p>
+          <div class="select-block">
+            <select
+              name="dropoff-date"
+              id="dropoff-date"
+              class="select"
+              required
+            >
+              <option value="1" selected>01.01.2024</option>
+              <option value="2">02.01.2024</option>
+            </select>
+            <select
+              name="dropoff-time"
+              id="dropoff-time"
+              class="select"
+              required
+            >
+              <option value="10" selected>10:00</option>
+              <option value="11">11:00</option>
+            </select>
+          </div>
+        </div>
+        <div style="position: relative; bottom: -15px">
+          <button class="button button--primary button--primary--height-46px">
+            Search
+          </button>
+        </div>
+      </form>
+      <form type="submit" class="booking-form--cars-page--mobile">
+        <div class="booking-txt-block--cars-page-mobile">
+          <p style="font-size: 15px; font-weight: 600">Rent details</p>
+          <p>20.07.2024, 9:00 – 23.07.2024, 9:00</p>
+        </div>
+        <div class="booking-txt-block--cars-page-mobile">
+          <a href="#">Change</a>
+        </div>
+      </form>
       <h2 class="cars-headline--cars">Our cars</h2>
       <ul class="cars-list">
         <li class="car-item">
