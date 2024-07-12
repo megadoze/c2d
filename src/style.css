@@ -503,7 +503,7 @@ h4 {
 .booking-txt-block--cars-page-mobile {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  text-align: left;
   padding: 0.625rem 0.625rem;
   gap: 0.3125rem;
 }
