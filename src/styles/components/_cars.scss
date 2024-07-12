@@ -91,6 +91,14 @@
             padding-right: rem(34);
         }
     }
+
+    &--current {
+        color: $color-text-black;
+    }
+
+    &--future {
+        color: $color-text-gray;
+    }
 }
 
 // main & cars pages

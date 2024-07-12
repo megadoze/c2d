@@ -608,6 +608,12 @@ h4 {
   background-size: contain;
   padding-right: 2.125rem;
 }
+.step-item__name--current {
+  color: #333333;
+}
+.step-item__name--future {
+  color: #757575;
+}
 
 .cars-headline {
   font-size: 2.625rem;
