@@ -246,7 +246,6 @@ h4 {
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
-  height: 1rem;
 }
 @media screen and (max-width: 62rem) {
   .menu__list {
@@ -272,8 +271,7 @@ h4 {
 }
 
 .menu__item > a {
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
+  text-decoration: none;
 }
 @media screen and (max-width: 62rem) {
   .menu__item {
@@ -300,6 +298,13 @@ h4 {
   .menu__item-link::after {
     display: none;
   }
+}
+.menu__item-link--current::after {
+  content: "";
+  border-bottom: 2px solid #EE653A;
+  display: block;
+  margin-top: 2px;
+  transform: scaleX(100%);
 }
 .menu__item-link:hover::after {
   transition: transform 0.3s ease;
