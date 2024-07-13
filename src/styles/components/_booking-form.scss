@@ -56,7 +56,7 @@
         @include md {
             position: sticky;
             top: 0;
-            padding: rem(10) rem(20);
+            // padding: rem(10) rem(20);
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -111,7 +111,7 @@
         display: flex;
         flex-direction: column;
         text-align: left;
-        padding: rem(10) rem(10);
+        padding: rem(14) rem(20);
         gap: rem(5);
 
         p {
@@ -121,6 +121,12 @@
         a {
             color: $color-text-link;
             text-decoration: none;
+        }
+
+        &--text {
+            @include sm {
+                font-size: rem(15);
+            }
         }
     }
 }
