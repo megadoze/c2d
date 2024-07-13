@@ -131,3 +131,16 @@
     gap: 10px;
     margin-bottom: 20px;
 }
+
+.mobile-container {
+    @include sm {
+        width: 100%;
+        height: 13px;
+        background-color: white;
+        z-index: 1;
+        position: sticky;
+        top: 0;
+        margin-bottom: -13px;
+    }
+
+}
