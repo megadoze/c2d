@@ -1613,6 +1613,9 @@ h4 {
   background-size: contain;
   padding-left: 12px;
 }
+.car-booking-form__img {
+  width: 1.125rem;
+}
 .car-booking-form__time-container {
   display: flex;
   align-items: center;
