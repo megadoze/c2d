@@ -102,7 +102,7 @@
     flex-grow: 6;
     border: 1px solid $color-gray;
     border-radius: rem(20);
-    padding: rem(20);
+    padding: rem(30);
 
     p {
         margin: 0;
@@ -116,10 +116,20 @@
         padding: rem(15) rem(30);
         border-radius: rem(15);
 
+        @include sm {
+            font-size: rem(26);
+        }
+
         span {
             font-size: rem(24);
             font-weight: 400;
+
+            @include sm {
+                font-size: rem(18);
+            }
         }
+
+
     }
 
     &__minmax {
@@ -169,18 +179,18 @@
         align-items: center;
         justify-content: space-between;
         margin-top: rem(20);
-        gap: rem(10);
+        gap: rem(20);
     }
 
     &__time-block {
         display: flex;
         flex-direction: column;
-        width: rem(160);
+        width: 100%;
     }
 
     &__time-title {
         padding-bottom: rem(10);
-        text-align: center;
+        // text-align: center;
     }
 
     &__time {
@@ -188,8 +198,7 @@
         padding: rem(20);
         border-radius: rem(15);
         display: flex;
-        align-items: center;
-        justify-content: center;
+        // justify-content: center;
 
         &::before {
             content: "";
@@ -200,6 +209,44 @@
             background-repeat: no-repeat;
             background-size: contain;
             padding-left: 10px;
+        }
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        padding-top: rem(30);
+        padding-bottom: rem(20);
+        gap: rem(10);
+
+        &--box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        &-discount-title {
+            color: $color-primary;
+            display: flex;
+
+            &::before {
+                content: "";
+                background-image: url('assets/images/icons/icon-discount.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: rem(19);
+                transform: rotate(180deg);
+                margin-left: rem(-3);
+            }
+        }
+
+        &-discount-sum {
+            color: $color-primary;
         }
     }
 }
