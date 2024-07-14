@@ -48,26 +48,36 @@
     }
 }
 
-.car-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: rem(30);
-    gap: rem(20);
-
-    @include md {
-        flex-direction: column;
-    }
-}
-
 .car-headline {
     font-size: rem(32);
     font-weight: 600;
+    margin-top: rem(20);
+    padding: 0 rem(30);
+
+    @include md {
+        font-size: rem(24);
+        padding: 0;
+    }
+}
+
+.car-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 rem(30);
+    margin-top: rem(30);
+    gap: rem(30);
+
+    @include md {
+        flex-direction: column;
+        padding: 0 0;
+        margin-top: rem(20);
+    }
 }
 
 .car-content {
     display: flex;
     flex-direction: column;
-    flex-basis: 65%;
+    flex-basis: 63%;
 
     p {
         margin: 0;
@@ -89,7 +99,8 @@
 .car-booking-form {
     display: flex;
     flex-direction: column;
-    flex-basis: 35%;
+    // min-width: rem(360);
+    flex-grow: 6;
     border: 1px solid $color-gray;
     border-radius: rem(20);
     padding: rem(20);
@@ -99,13 +110,93 @@
     }
 
     &__price {
-        font-size: rem(42);
+        font-size: rem(36);
         font-weight: 600;
         text-align: center;
+        background-color: $bg-gray;
+        padding: rem(15) rem(30);
+        border-radius: rem(15);
 
         span {
-            font-size: rem(22);
+            font-size: rem(24);
             font-weight: 400;
+        }
+    }
+
+    &__minmax {
+        text-align: center;
+        padding-top: rem(20);
+        font-size: rem(15);
+        color: $color-text-gray;
+
+        span {
+            padding: 0 rem(5);
+            font-weight: 600;
+        }
+    }
+
+    &__dates {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid $color-gray;
+        padding: rem(20);
+        border-radius: rem(15);
+        margin-top: rem(15);
+    }
+
+    &__date {
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: "";
+            background-image: url('assets/images/icons/icon-calendar.svg');
+            width: rem(12);
+            height: rem(12);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-left: 12px;
+        }
+    }
+
+    &__time-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: rem(20);
+        gap: rem(10);
+    }
+
+    &__time-block {
+        display: flex;
+        flex-direction: column;
+        width: rem(160);
+    }
+
+    &__time-title {
+        padding-bottom: rem(10);
+        text-align: center;
+    }
+
+    &__time {
+        border: 1px solid $color-gray;
+        padding: rem(20);
+        border-radius: rem(15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+            content: "";
+            background-image: url('assets/images/icons/icon-time.svg');
+            width: rem(16);
+            height: rem(16);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-left: 10px;
         }
     }
 }
