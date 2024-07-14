@@ -1646,6 +1646,7 @@ h4 {
   padding: 1.25rem;
   border-radius: 0.9375rem;
   display: flex;
+  align-items: center;
 }
 .car-booking-form__time::before {
   content: "";
