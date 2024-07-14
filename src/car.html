@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta title="Rent Seat Ibiza in Kyiv - CAR2DRIVE" />
+    <meta
+      name="description"
+      content="Rent Seat Ibiza in Kyiv, best price, from 20$/day, from 1 day. Delivery to address, unlimited mileage"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rent Seat Ibiza in Kyiv - CAR2DRIVE</title>
+  </head>
+  <body>
+    <header class="header header--position">
+      <div class="container header__container">
+        <a href="index.html" class="logo header__logo">
+          <!-- <img
+                  src="assets/images/new-logo.svg"
+                  class="logo__img"
+                  alt="CAR2DRIVE"
+                /> -->
+          <p>CAR<span class="logo__txt">2</span>DRIVE</p>
+        </a>
+        <nav class="menu header__menu">
+          <button
+            class="button button--outline menu__toggle js-menu-toggle"
+            aria-expanded="false"
+            aria-controls="menu__list"
+          >
+            <span class="visually-hidden">Menu</span>
+            <span class="menu__toggle-icon">
+              <span class="line line-1"></span>
+              <span class="line line-2"></span>
+              <span class="line line-3"></span>
+            </span>
+          </button>
+          <ul id="menu__list" class="menu__list">
+            <li class="menu__item">
+              <a class="menu__item-link" href="cars.html">Cars</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#special">Special</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#blog">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#faq">FAQ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#review">Review</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#about">About</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+380978886628" class="header__phone">+38 097 888 66 28</a>
+        <button type="button" class="button button--lang">EN</button>
+      </div>
+    </header>
+    <main>
+      <!-- steps -->
+      <section class="container">
+        <ul class="steps-list">
+          <li class="step-item">
+            <p class="step-item__name step-item__name--checked">
+              Step 1. Rental options
+            </p>
+            <img
+              class="step-item__img"
+              src="./assets/images/icons/icon-step_arrow.svg"
+              alt=""
+            />
+          </li>
+          <li class="step-item">
+            <p class="step-item__name step-item__name--checked">
+              Step 2. Car selection
+            </p>
+            <img
+              class="step-item__img"
+              src="./assets/images/icons/icon-step_arrow.svg"
+              alt=""
+            />
+          </li>
+          <li class="step-item">
+            <p class="step-item__name step-item__name--current">
+              Step 3. Price and additional services
+            </p>
+            <img
+              class="step-item__img"
+              src="./assets/images/icons/icon-step_arrow.svg"
+              alt=""
+            />
+          </li>
+          <li class="step-item">
+            <p class="step-item__name step-item__name--future">
+              Step 4. Your data
+            </p>
+          </li>
+        </ul>
+        <div class="step-mobile">
+          <a href="cars.html">
+            <img
+              class="step-item__img--mobile"
+              src="./assets/images/icons/icon-step_arrow.svg"
+              alt=""
+            />
+          </a>
+          <p class="step-item__name step-item__name--current">
+            Step 3 from 4. Price and additional services
+          </p>
+        </div>
+      </section>
+      <!-- calendar -->
+      <section class="container calendar-container">
+        <form type="submit" class="booking-form--cars-page">
+          <!-- Location -->
+          <div class="booking-txt-block--cars-page">
+            <p>Location</p>
+            <div class="select-block">
+              <select
+                name="pickup-place"
+                id="pickup-place"
+                class="select"
+                required
+              >
+                <option value="office" selected>
+                  Office, Kyiv, St.Nyjnyi Val, 7-9
+                </option>
+                <option value="office">Delivery to address</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Pick-Up -->
+          <div class="booking-txt-block--cars-page">
+            <p>Pick-Up</p>
+            <div class="select-block">
+              <select
+                name="pickup-date"
+                id="pickup-date"
+                class="select"
+                required
+              >
+                <option value="1" selected>01.01.2024</option>
+                <option value="2">02.01.2024</option>
+              </select>
+              <select
+                name="pickup-time"
+                id="pickup-time"
+                class="select"
+                required
+              >
+                <option value="10" selected>10:00</option>
+                <option value="11">11:00</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Pick-Off -->
+          <div class="booking-txt-block--cars-page">
+            <p>Drop-Off</p>
+            <div class="select-block">
+              <select
+                name="dropoff-date"
+                id="dropoff-date"
+                class="select"
+                required
+              >
+                <option value="1" selected>01.01.2024</option>
+                <option value="2">02.01.2024</option>
+              </select>
+              <select
+                name="dropoff-time"
+                id="dropoff-time"
+                class="select"
+                required
+              >
+                <option value="10" selected>10:00</option>
+                <option value="11">11:00</option>
+              </select>
+            </div>
+          </div>
+          <div style="position: relative; bottom: -15px">
+            <button class="button button--primary button--primary--height-46px">
+              Search
+            </button>
+          </div>
+        </form>
+        <div class="mobile-container"></div>
+        <form type="submit" class="booking-form--cars-page--mobile">
+          <div class="booking-txt-block--cars-page-mobile">
+            <p style="font-size: 15px; font-weight: 600">Rent details</p>
+            <p class="booking-txt-block--cars-page-mobile--text">
+              <span>20.07.2024, 9:00</span> –
+              <span style="white-space: nowrap">23.07.2024, 9:00,</span>
+              <span style="white-space: nowrap">3 days</span>
+            </p>
+          </div>
+          <div class="booking-txt-block--cars-page-mobile">
+            <a href="#">Change</a>
+          </div>
+        </form>
+      </section>
+      <!-- car -->
+      <section class="container">
+        <!-- <ul class="rates">
+          <li class="rates-item rates-item--current">
+            <p class="rates-item__rate rates-item__rate">
+              32.00$ / day <span>(1-2 days)</span>
+            </p>
+            <p class="rates-item__rate--discount"></p>
+          </li>
+          <li class="rates-item">
+            <p class="rates-item__rate">28.00$ / day <span>(3-7 days)</span></p>
+            <p class="rates-item__rate--discount">32.00$ / day</p>
+          </li>
+          <li class="rates-item">
+            <p class="rates-item__rate">
+              24.00$ / day <span>(8-29 days)</span>
+            </p>
+            <p class="rates-item__rate--discount">32.00$ / day</p>
+          </li>
+          <li class="rates-item">
+            <p class="rates-item__rate">20.00$ / day <span>(30+ days)</span></p>
+            <p class="rates-item__rate--discount">32.00$ / day</p>
+          </li>
+        </ul> -->
+        <h1 class="car-headline">Audi Q5 2022</h1>
+        <div class="car-container">
+          <div class="car-content">
+            <img
+              class="car-content__img"
+              src="./assets/images/content/car/audi-q5-1.jpg"
+              alt="audi q5"
+            />
+          </div>
+          <div class="car-booking-form">
+            <p class="car-booking-form__price">68$ <span>/ day</span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

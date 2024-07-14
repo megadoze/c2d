@@ -1,0 +1,111 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../functions' as *;
+
+.rates {
+    @include list-reset;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(10);
+    background-color: $bg-gray;
+    border-radius: rem(15);
+}
+
+.rates-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: rem(15);
+    padding: rem(20) rem(30);
+    width: 100%;
+    height: rem(80);
+
+    &--current {
+        background-color: $color-form;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    &__rate {
+        font-size: rem(20);
+        font-weight: 600;
+        padding-bottom: rem(5);
+
+        span {
+            font-size: rem(18);
+            font-weight: 400;
+
+        }
+
+        &--discount {
+            color: $color-text-gray;
+            text-decoration: line-through;
+        }
+    }
+}
+
+.car-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(30);
+    gap: rem(20);
+
+    @include md {
+        flex-direction: column;
+    }
+}
+
+.car-headline {
+    font-size: rem(32);
+    font-weight: 600;
+}
+
+.car-content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 65%;
+
+    p {
+        margin: 0;
+    }
+
+    &__img {
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+        border-radius: rem(20);
+    }
+}
+
+.calendar-container {
+    position: sticky;
+    top: 0;
+}
+
+.car-booking-form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35%;
+    border: 1px solid $color-gray;
+    border-radius: rem(20);
+    padding: rem(20);
+
+    p {
+        margin: 0;
+    }
+
+    &__price {
+        font-size: rem(42);
+        font-weight: 600;
+        text-align: center;
+
+        span {
+            font-size: rem(22);
+            font-weight: 400;
+        }
+    }
+}
