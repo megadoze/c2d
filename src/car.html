@@ -116,97 +116,7 @@
           </p>
         </div>
       </section>
-      <!-- calendar -->
-      <section class="container calendar-container">
-        <form type="submit" class="booking-form--cars-page">
-          <!-- Location -->
-          <div class="booking-txt-block--cars-page">
-            <p>Location</p>
-            <div class="select-block">
-              <select
-                name="pickup-place"
-                id="pickup-place"
-                class="select"
-                required
-              >
-                <option value="office" selected>
-                  Office, Kyiv, St.Nyjnyi Val, 7-9
-                </option>
-                <option value="office">Delivery to address</option>
-              </select>
-            </div>
-          </div>
 
-          <!-- Pick-Up -->
-          <div class="booking-txt-block--cars-page">
-            <p>Pick-Up</p>
-            <div class="select-block">
-              <select
-                name="pickup-date"
-                id="pickup-date"
-                class="select"
-                required
-              >
-                <option value="1" selected>01.01.2024</option>
-                <option value="2">02.01.2024</option>
-              </select>
-              <select
-                name="pickup-time"
-                id="pickup-time"
-                class="select"
-                required
-              >
-                <option value="10" selected>10:00</option>
-                <option value="11">11:00</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Pick-Off -->
-          <div class="booking-txt-block--cars-page">
-            <p>Drop-Off</p>
-            <div class="select-block">
-              <select
-                name="dropoff-date"
-                id="dropoff-date"
-                class="select"
-                required
-              >
-                <option value="1" selected>01.01.2024</option>
-                <option value="2">02.01.2024</option>
-              </select>
-              <select
-                name="dropoff-time"
-                id="dropoff-time"
-                class="select"
-                required
-              >
-                <option value="10" selected>10:00</option>
-                <option value="11">11:00</option>
-              </select>
-            </div>
-          </div>
-          <div style="position: relative; bottom: -15px">
-            <button class="button button--primary button--primary--height-46px">
-              Search
-            </button>
-          </div>
-        </form>
-        <div class="mobile-container"></div>
-        <form type="submit" class="booking-form--cars-page--mobile">
-          <div class="booking-txt-block--cars-page-mobile">
-            <p style="font-size: 15px; font-weight: 600">Rent details</p>
-            <p class="booking-txt-block--cars-page-mobile--text">
-              <span>20.07.2024, 9:00</span> –
-              <span style="white-space: nowrap">23.07.2024, 9:00,</span>
-              <span style="white-space: nowrap">3 days</span>
-            </p>
-          </div>
-          <div class="booking-txt-block--cars-page-mobile">
-            <a href="#">Change</a>
-          </div>
-        </form>
-      </section>
       <!-- car -->
       <section class="container">
         <!-- <ul class="rates">
@@ -276,7 +186,9 @@
                 <p>0.00 $</p>
               </div>
               <div class="car-booking-form__details--box">
-                <p class="car-booking-form__details-discount-title">Discount</p>
+                <p class="car-booking-form__details-discount-title">
+                  Discount <span>-10%</span>
+                </p>
                 <p class="car-booking-form__details-discount-sum">-10.80 $</p>
               </div>
               <div class="car-booking-form__details--box">
