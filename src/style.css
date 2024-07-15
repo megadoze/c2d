@@ -1574,17 +1574,15 @@ h4 {
   margin: 0;
 }
 .car-booking-form__price {
-  font-size: 2.25rem;
+  font-size: 2.625rem;
   font-weight: 600;
   text-align: center;
-  background-color: #fff;
   padding: 0.625rem 1.875rem;
-  border-radius: 0.9375rem;
 }
 @media screen and (max-width: 48rem) {
   .car-booking-form__price {
-    font-size: 1.625rem;
-    padding: 0.875rem 1.875rem;
+    font-size: 2rem;
+    padding-top: 0.875rem;
   }
 }
 .car-booking-form__price span {
@@ -1598,7 +1596,7 @@ h4 {
 }
 .car-booking-form__minmax {
   text-align: center;
-  padding-top: 1.25rem;
+  padding-top: 0.9375rem;
   font-size: 0.9375rem;
   color: #757575;
 }
