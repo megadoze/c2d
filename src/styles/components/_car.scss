@@ -51,7 +51,7 @@
 .car-headline {
     font-size: rem(32);
     font-weight: 600;
-    margin-top: rem(20);
+    margin-top: rem(30);
     padding: 0 rem(30);
 
     @include md {
@@ -85,16 +85,80 @@
 
     &__img {
         width: 100%;
-        max-height: 510px;
+        max-height: rem(506);
         object-fit: cover;
         border-radius: rem(20);
     }
 }
 
+.car-characteristics {
+    margin-top: rem(20);
+    background-color: $bg-gray;
+    border-radius: rem(20);
+
+    &__list {
+        @include list-reset;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: rem(20);
+
+        @include sm {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: rem(10);
+        }
+    }
+
+    &__item {
+        display: inline-flex;
+        align-items: center;
+        gap: rem(5);
+
+        &-img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.car-booking-settings {
+    @include list-reset;
+
+    margin-top: rem(30);
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        gap: rem(10);
+        padding-bottom: rem(20);
+
+        &-img {
+            width: rem(24);
+            height: rem(24);
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            gap: rem(10);
+            letter-spacing: 0.2px;
+        }
+
+        &-title {
+            font-size: rem(18);
+            font-weight: 600;
+        }
+    }
+}
+
+
 .calendar-container {
     position: sticky;
     top: 0;
 }
+
+
 
 .car-booking-form {
     display: flex;
@@ -104,6 +168,7 @@
     background-color: $color-form;
     border-radius: rem(20);
     padding: rem(30);
+    max-height: rem(506);
 
     @include sm {
         padding: rem(20);
