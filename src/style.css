@@ -1565,6 +1565,11 @@ h4 {
   border-radius: 1.25rem;
   padding: 1.875rem;
 }
+@media screen and (max-width: 48rem) {
+  .car-booking-form {
+    padding: 1.25rem;
+  }
+}
 .car-booking-form p {
   margin: 0;
 }
@@ -1640,6 +1645,7 @@ h4 {
 }
 .car-booking-form__time-title {
   padding-bottom: 0.625rem;
+  letter-spacing: 0.2px;
 }
 .car-booking-form__time {
   border: 1px solid rgba(215, 215, 215, 0.6);
@@ -1663,7 +1669,7 @@ h4 {
   flex-direction: column;
   padding-top: 1.875rem;
   padding-bottom: 1.25rem;
-  gap: 0.625rem;
+  gap: 0.5rem;
 }
 .car-booking-form__details--box {
   display: flex;
@@ -1672,6 +1678,7 @@ h4 {
 }
 .car-booking-form__details--box p {
   margin: 0;
+  letter-spacing: 0.2px;
 }
 .car-booking-form__details-discount-title {
   color: #EE653A;
@@ -1689,4 +1696,8 @@ h4 {
 }
 .car-booking-form__details-discount-sum {
   color: #EE653A;
+}
+.car-booking-form__details-total {
+  padding-top: 0.1875rem;
+  font-size: 1.0625rem;
 }/*# sourceMappingURL=style.css.map */
