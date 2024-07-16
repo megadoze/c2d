@@ -53,6 +53,7 @@
     font-weight: 600;
     margin-top: rem(30);
     padding: 0 rem(30);
+    max-width: rem(1400);
 
     @include md {
         font-size: rem(24);
@@ -66,6 +67,7 @@
     padding: 0 rem(30);
     margin-top: rem(30);
     gap: rem(30);
+    max-width: rem(1400);
 
     @include md {
         flex-direction: column;
@@ -86,6 +88,7 @@
     &__img {
         width: 100%;
         max-height: rem(506);
+        aspect-ratio: 4/3;
         object-fit: cover;
         border-radius: rem(20);
     }
@@ -107,6 +110,7 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: auto;
             gap: rem(10);
+            font-size: rem(15);
         }
     }
 
@@ -126,12 +130,15 @@
     @include list-reset;
 
     margin-top: rem(30);
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
 
     &__item {
         display: flex;
         align-items: flex-start;
         gap: rem(10);
-        padding-bottom: rem(20);
+        // padding-bottom: rem(20);
 
         &-img {
             width: rem(24);
@@ -146,19 +153,133 @@
         }
 
         &-title {
-            font-size: rem(18);
             font-weight: 600;
         }
     }
 }
 
+.car-about {
+    margin-top: rem(30);
+    letter-spacing: 0.2px;
+    line-height: 1.4;
 
-.calendar-container {
-    position: sticky;
-    top: 0;
+    &__title {
+        font-size: rem(22);
+        font-weight: 600;
+        padding-bottom: rem(10);
+    }
 }
 
+.car-options {
+    margin-top: rem(30);
+    letter-spacing: 0.2px;
+    line-height: 1.4;
 
+    &__title {
+        font-size: rem(22);
+        font-weight: 600;
+        padding-bottom: rem(10);
+    }
+
+    &__list {
+        @include list-reset;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: rem(10);
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: rem(10);
+
+        &-img {
+            width: rem(24);
+            height: rem(24);
+        }
+    }
+}
+
+.car-extras {
+    margin-top: rem(30);
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+
+    &__title {
+        font-size: rem(22);
+        font-weight: 600;
+        padding-bottom: rem(10);
+    }
+
+    &__list {
+        @include list-reset;
+
+        display: flex;
+        flex-direction: column;
+        gap: rem(10);
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: rem(10);
+        max-width: rem(510);
+
+        &-block {
+            display: flex;
+            align-items: center;
+            // flex-basis: 50%;
+            gap: rem(10);
+
+            &-img {
+                width: rem(24);
+                height: rem(24);
+            }
+        }
+
+        &-price {
+            flex-basis: 30%;
+            padding-left: rem(10);
+            text-align: end;
+            // font-weight: 600;
+        }
+    }
+}
+
+.car-rules {
+    margin-top: rem(30);
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+
+    &__title {
+        font-size: rem(22);
+        font-weight: 600;
+        padding-bottom: rem(10);
+    }
+
+    &__list {
+        @include list-reset;
+
+        display: flex;
+        flex-direction: column;
+        gap: rem(10);
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: rem(10);
+
+        &-img {
+            width: rem(24);
+            height: rem(24);
+        }
+    }
+
+}
 
 .car-booking-form {
     display: flex;
