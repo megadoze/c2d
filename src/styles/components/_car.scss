@@ -99,6 +99,10 @@
     background-color: $bg-gray;
     border-radius: rem(20);
 
+    @include sm {
+        margin: rem(10) 0;
+    }
+
     &__list {
         @include list-reset;
 
@@ -292,7 +296,7 @@
     max-height: rem(506);
 
     @include sm {
-        padding: rem(20);
+        // display: none;
     }
 
     p {
@@ -458,6 +462,50 @@
         &-total {
             padding-top: rem(3);
             font-size: rem(17);
+        }
+    }
+}
+
+.disable-mobile {
+    @include sm {
+        display: none;
+    }
+}
+
+.disable-desctop {
+    display: none;
+
+    @include sm {
+        display: block;
+    }
+}
+
+.car-booking-form__footer {
+    display: none;
+
+    @include sm {
+
+        position: sticky;
+        bottom: 0;
+        background-color: $bg-light;
+        padding: rem(10) 0;
+        border-top: 1px solid $color-gray;
+        display: block;
+
+        &-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        &-sum {
+            flex-basis: 100%;
+            padding-left: rem(10);
+            font-size: rem(26);
         }
     }
 }

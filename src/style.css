@@ -1561,6 +1561,11 @@ h4 {
   background-color: #f5f5f5;
   border-radius: 1.25rem;
 }
+@media screen and (max-width: 48rem) {
+  .car-characteristics {
+    margin: 0.625rem 0;
+  }
+}
 .car-characteristics__list {
   margin: 0;
   padding: 0;
@@ -1732,11 +1737,6 @@ h4 {
   padding: 1.875rem;
   max-height: 31.625rem;
 }
-@media screen and (max-width: 48rem) {
-  .car-booking-form {
-    padding: 1.25rem;
-  }
-}
 .car-booking-form p {
   margin: 0;
 }
@@ -1876,4 +1876,46 @@ h4 {
 .car-booking-form__details-total {
   padding-top: 0.1875rem;
   font-size: 1.0625rem;
+}
+
+@media screen and (max-width: 48rem) {
+  .disable-mobile {
+    display: none;
+  }
+}
+
+.disable-desctop {
+  display: none;
+}
+@media screen and (max-width: 48rem) {
+  .disable-desctop {
+    display: block;
+  }
+}
+
+.car-booking-form__footer {
+  display: none;
+}
+@media screen and (max-width: 48rem) {
+  .car-booking-form__footer {
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+    padding: 0.625rem 0;
+    border-top: 1px solid rgba(215, 215, 215, 0.6);
+    display: block;
+  }
+  .car-booking-form__footer-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .car-booking-form__footer-box p {
+    margin: 0;
+  }
+  .car-booking-form__footer-sum {
+    flex-basis: 100%;
+    padding-left: 0.625rem;
+    font-size: 1.625rem;
+  }
 }/*# sourceMappingURL=style.css.map */
