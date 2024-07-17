@@ -75,7 +75,7 @@
     }
 
     &__rating {
-        font-size: rem(20);
+        font-size: rem(18);
         display: flex;
         align-items: center;
 
@@ -132,7 +132,7 @@
 
     &__img {
         width: 100%;
-        max-height: rem(506);
+        max-height: rem(505.5);
         aspect-ratio: 4/3;
         object-fit: cover;
         border-radius: rem(20);
