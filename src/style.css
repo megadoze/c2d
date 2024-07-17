@@ -1510,7 +1510,7 @@ h4 {
 
 .car-headline {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
   padding-bottom: 0.9375rem;
 }
