@@ -1555,6 +1555,11 @@ h4 {
      object-fit: cover;
   border-radius: 1.25rem;
 }
+@media screen and (max-width: 48rem) {
+  .car-content {
+    font-size: 0.9375rem;
+  }
+}
 
 .car-characteristics {
   margin-top: 1.25rem;
@@ -1902,10 +1907,10 @@ h4 {
   .car-booking-form__footer {
     position: sticky;
     bottom: 0;
-    padding: 15px 20px;
+    padding: 12px 13px;
     display: block;
     background-color: #FFDC42;
-    border-radius: 0.9375rem;
+    border-radius: 1.25rem;
   }
   .car-booking-form__footer-box {
     display: flex;
@@ -1918,10 +1923,10 @@ h4 {
   .car-booking-form__footer-sum {
     flex-basis: 100%;
     padding-left: 0.625rem;
-    font-size: 1.625rem;
+    font-size: 1.375rem;
   }
   .car-booking-form__footer-button {
-    padding: 1rem 2.5rem;
+    padding: 0.8125rem 1.875rem;
     border-radius: 0.625rem;
   }
 }/*# sourceMappingURL=style.css.map */

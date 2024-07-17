@@ -92,6 +92,10 @@
         object-fit: cover;
         border-radius: rem(20);
     }
+
+    @include sm {
+        font-size: rem(15);
+    }
 }
 
 .car-characteristics {
@@ -492,11 +496,11 @@
         bottom: 0;
         // background-color: $bg-light;
         // margin: 0px -20px;
-        padding: 15px 20px;
+        padding: 12px 13px;
         // border-top: 1px solid $color-gray;
         display: block;
         background-color: $color-form;
-        border-radius: rem(15);
+        border-radius: rem(20);
 
         &-box {
             display: flex;
@@ -511,11 +515,11 @@
         &-sum {
             flex-basis: 100%;
             padding-left: rem(10);
-            font-size: rem(26);
+            font-size: rem(22);
         }
 
         &-button {
-            padding: rem(16) rem(40);
+            padding: rem(13) rem(30);
             border-radius: rem(10);
         }
     }
