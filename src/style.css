@@ -1793,6 +1793,16 @@ h4 {
 
 .car-booking-info {
   flex-shrink: 3;
+  max-width: 420px;
+  max-height: 58.75rem;
+  position: sticky;
+  top: -3.25rem;
+  margin-bottom: 20rem;
+}
+@media screen and (max-width: 48rem) {
+  .car-booking-info {
+    display: none;
+  }
 }
 
 .car-booking-form {

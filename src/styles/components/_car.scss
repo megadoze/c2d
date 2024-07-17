@@ -353,6 +353,15 @@
 
 .car-booking-info {
     flex-shrink: 3;
+    max-width: 420px;
+    max-height: rem(940);
+    position: sticky;
+    top: rem(-52);
+    margin-bottom: rem(320);
+
+    @include sm {
+        display: none;
+    }
 }
 
 .car-booking-form {
