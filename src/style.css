@@ -1564,8 +1564,8 @@ h4 {
 .car-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 1.875rem;
-  gap: 1.875rem;
+  padding: 0 3.75rem;
+  gap: 3.125rem;
   max-width: 87.5rem;
   margin-top: 1.875rem;
 }
@@ -1791,14 +1791,16 @@ h4 {
   padding-top: 0.3125rem;
 }
 
+.car-booking-info {
+  flex-shrink: 4;
+}
+
 .car-booking-form {
   display: flex;
   flex-direction: column;
-  flex-grow: 6;
   background-color: #FFDC42;
   border-radius: 1.25rem;
   padding: 1.875rem;
-  max-height: 31.625rem;
   margin-top: 3.25rem;
 }
 @media screen and (max-width: 62rem) {
@@ -1999,4 +2001,54 @@ h4 {
     padding: 0.8125rem 1.875rem;
     border-radius: 0.625rem;
   }
+}
+
+.car-booking-basic-conditions {
+  margin-top: 1.25rem;
+  padding: 1.875rem;
+  border-radius: 1.25rem;
+  background-color: #f5f5f5;
+}
+@media screen and (max-width: 62rem) {
+  .car-booking-basic-conditions {
+    margin-top: 0.625rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .car-booking-basic-conditions {
+    padding: 1.25rem;
+  }
+}
+.car-booking-basic-conditions__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.car-booking-basic-conditions__item {
+  display: flex;
+  gap: 0.625rem;
+}
+.car-booking-basic-conditions__item-img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.car-booking-basic-conditions__item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.car-booking-basic-conditions__item-name {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.car-booking-basic-conditions__item-description {
+  margin: 0;
+  font-weight: 300;
+}
+.car-booking-basic-conditions__item-description a {
+  text-decoration: none;
+  color: #EE653A;
 }/*# sourceMappingURL=style.css.map */
