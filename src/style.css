@@ -1805,6 +1805,11 @@ h4 {
     margin-top: 0;
   }
 }
+@media screen and (max-width: 48rem) {
+  .car-booking-form {
+    padding: 1.25rem;
+  }
+}
 .car-booking-form p {
   margin: 0;
 }

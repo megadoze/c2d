@@ -365,6 +365,10 @@
         margin-top: 0;
     }
 
+    @include sm {
+        padding: rem(20);
+    }
+
     p {
         margin: 0;
     }
