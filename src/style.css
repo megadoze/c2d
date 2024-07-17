@@ -1513,7 +1513,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1.875rem;
+  padding-bottom: 0.9375rem;
 }
 @media screen and (max-width: 62rem) {
   .car-headline {
@@ -1541,19 +1541,24 @@ h4 {
 }
 .car-headline__rating::after {
   content: "";
-  background-image: url("/src/assets/images/icons/icon-star-fill.svg");
+  background-image: url("assets/images/icons/icon-star-fill.svg");
   width: 1.5rem;
   height: 1.5rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding-left: 0.125rem;
+  padding-left: 0.25rem;
 }
 .car-headline__rating span {
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-weight: 300;
   order: 1;
-  padding-left: 0.3125rem;
+  padding-left: 0.1875rem;
+}
+@media screen and (max-width: 48rem) {
+  .car-headline__rating {
+    font-size: 1.125rem;
+  }
 }
 
 .car-container {
@@ -1568,7 +1573,6 @@ h4 {
   .car-container {
     flex-direction: column;
     padding: 0 0;
-    margin-top: 1.25rem;
   }
 }
 @media screen and (max-width: 48rem) {
@@ -1613,8 +1617,9 @@ h4 {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   padding: 0.9375rem;
 }
 @media screen and (max-width: 48rem) {
@@ -1794,6 +1799,12 @@ h4 {
   border-radius: 1.25rem;
   padding: 1.875rem;
   max-height: 31.625rem;
+  margin-top: 3.25rem;
+}
+@media screen and (max-width: 62rem) {
+  .car-booking-form {
+    margin-top: 0;
+  }
 }
 .car-booking-form p {
   margin: 0;
@@ -1936,7 +1947,7 @@ h4 {
   font-size: 1.0625rem;
 }
 
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 62rem) {
   .disable-mobile {
     display: none;
   }
@@ -1945,7 +1956,7 @@ h4 {
 .disable-desctop {
   display: none;
 }
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 62rem) {
   .disable-desctop {
     display: block;
   }
@@ -1954,7 +1965,7 @@ h4 {
 .car-booking-form__footer {
   display: none;
 }
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 62rem) {
   .car-booking-form__footer {
     position: sticky;
     bottom: 0;

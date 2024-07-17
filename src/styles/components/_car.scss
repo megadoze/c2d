@@ -52,7 +52,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: rem(30);
+    padding-bottom: rem(15);
 
     @include md {
         max-width: 100%;
@@ -80,20 +80,24 @@
 
         &::after {
             content: "";
-            background-image: url('/src/assets/images/icons/icon-star-fill.svg');
+            background-image: url('assets/images/icons/icon-star-fill.svg');
             width: rem(24);
             height: rem(24);
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
-            padding-left: rem(2);
+            padding-left: rem(4);
         }
 
         span {
-            font-size: 1rem;
+            font-size: rem(15);
             font-weight: 300;
             order: 1;
-            padding-left: rem(5);
+            padding-left: rem(3);
+        }
+
+        @include sm {
+            font-size: rem(18);
         }
     }
 }
@@ -109,7 +113,6 @@
     @include md {
         flex-direction: column;
         padding: 0 0;
-        margin-top: rem(20);
     }
 
     @include sm {
@@ -151,14 +154,12 @@
     &__list {
         @include list-reset;
 
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
         padding: rem(15);
 
         @include sm {
-            // grid-template-columns: repeat(2, 1fr);
-            // grid-template-rows: auto;
-            // gap: rem(10);
             font-size: rem(14);
         }
     }
@@ -358,9 +359,10 @@
     border-radius: rem(20);
     padding: rem(30);
     max-height: rem(506);
+    margin-top: rem(52);
 
-    @include sm {
-        // display: none;
+    @include md {
+        margin-top: 0;
     }
 
     p {
@@ -529,7 +531,7 @@
 }
 
 .disable-mobile {
-    @include sm {
+    @include md {
         display: none;
     }
 }
@@ -537,7 +539,7 @@
 .disable-desctop {
     display: none;
 
-    @include sm {
+    @include md {
         display: block;
     }
 }
@@ -545,7 +547,7 @@
 .car-booking-form__footer {
     display: none;
 
-    @include sm {
+    @include md {
 
         position: sticky;
         bottom: 0;
