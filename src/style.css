@@ -1584,7 +1584,7 @@ h4 {
 .car-content {
   display: flex;
   flex-direction: column;
-  flex-basis: 63%;
+  flex-basis: 65%;
 }
 .car-content p {
   margin: 0;
@@ -1792,7 +1792,7 @@ h4 {
 }
 
 .car-booking-info {
-  flex-shrink: 4;
+  flex-shrink: 3;
 }
 
 .car-booking-form {
