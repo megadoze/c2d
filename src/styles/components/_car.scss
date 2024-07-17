@@ -63,8 +63,9 @@
         font-weight: 600;
 
         span {
-            font-size: rem(20);
+            font-size: rem(18);
             color: $color-text-gray;
+            font-weight: 300;
         }
 
         @include md {

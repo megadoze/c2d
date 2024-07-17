@@ -1524,8 +1524,9 @@ h4 {
   font-weight: 600;
 }
 .car-headline__title span {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   color: #757575;
+  font-weight: 300;
 }
 @media screen and (max-width: 62rem) {
   .car-headline__title {
