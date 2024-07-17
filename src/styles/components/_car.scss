@@ -115,7 +115,7 @@
         padding: 0 0;
     }
 
-    @include sm {
+    @include md {
         gap: 0;
     }
 }
@@ -147,7 +147,7 @@
     background-color: $bg-gray;
     border-radius: rem(20);
 
-    @include sm {
+    @include md {
         margin: rem(10) 0;
     }
 
@@ -570,9 +570,13 @@
         }
 
         &-sum {
-            flex-basis: 100%;
             padding-left: rem(10);
             font-size: rem(22);
+        }
+
+        &-text {
+            flex-grow: 1;
+            padding-left: 10px;
         }
 
         &-button {
