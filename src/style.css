@@ -265,9 +265,8 @@ h4 {
 }
 @media screen and (max-width: 62rem) {
   .menu__toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    text-align: end;
   }
 }
 
