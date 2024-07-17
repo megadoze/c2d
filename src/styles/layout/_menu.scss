@@ -20,16 +20,14 @@
 
 .menu__toggle {
     display: none;
-    width: rem(48);
+    // width: rem(48);
     height: rem(48);
     padding: 0;
 
     @include md {
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-        display: block;
-        text-align: end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
