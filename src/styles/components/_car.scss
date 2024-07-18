@@ -132,7 +132,7 @@
 
     &__img {
         width: 100%;
-        max-height: rem(505.5);
+        max-height: rem(464);
         aspect-ratio: 4/3;
         object-fit: cover;
         border-radius: rem(20);
@@ -357,8 +357,8 @@
 
 .car-booking-info {
     flex-shrink: 3;
-    max-width: 420px;
-    max-height: rem(940);
+    max-width: 400px;
+    max-height: rem(908);
     position: sticky;
     top: rem(-52);
     margin-bottom: rem(320);
@@ -390,24 +390,24 @@
     }
 
     &__price {
-        font-size: rem(42);
+        font-size: rem(32);
         font-weight: 600;
         text-align: center;
         // background-color: $bg-light;
-        padding: rem(10) rem(30);
+        padding: rem(5);
         // border-radius: rem(15);
 
         @include sm {
-            font-size: rem(32);
+            font-size: rem(26);
             padding: 0;
         }
 
         span {
-            font-size: rem(24);
+            font-size: rem(20);
             font-weight: 400;
 
             @include sm {
-                font-size: rem(18);
+                font-size: rem(16);
             }
         }
     }
@@ -433,7 +433,7 @@
         background-color: $bg-light;
         padding: rem(20);
         border-radius: rem(15);
-        margin-top: rem(15);
+        margin-top: rem(10);
     }
 
     &__date {
@@ -460,7 +460,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: rem(20);
+        margin-top: rem(15);
         gap: rem(20);
     }
 
@@ -498,8 +498,8 @@
     &__details {
         display: flex;
         flex-direction: column;
-        padding-top: rem(20);
-        padding-bottom: rem(20);
+        padding-top: rem(15);
+        padding-bottom: rem(15);
         gap: rem(5);
 
         &--box {

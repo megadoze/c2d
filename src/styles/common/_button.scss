@@ -60,6 +60,8 @@
     background-color: $color-primary;
     padding: rem(20) rem(60);
     font-weight: 600;
+    border-radius: 10px;
+    letter-spacing: 1.1px;
 
     &:hover,
     &:active {
