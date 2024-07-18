@@ -1696,7 +1696,12 @@ h4 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 0.9375rem 1.25rem;
+}
+@media screen and (max-width: 48rem) {
+  .car-options__list {
+    gap: 0.625rem 0.9375rem;
+  }
 }
 .car-options__item {
   display: flex;
