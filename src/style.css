@@ -1930,6 +1930,11 @@ h4 {
   padding-top: 0.1875rem;
   font-size: 1.0625rem;
 }
+@media screen and (max-width: 62rem) {
+  .car-booking-form__details-total {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 62rem) {
   .disable-mobile {
@@ -2190,7 +2195,7 @@ h4 {
   cursor: pointer;
 }
 .car-booking-agree a {
-  color: #2F80ED;
+  color: #EE653A;
   text-decoration: none;
 }
 .car-booking-agree--checkbox {

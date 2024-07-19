@@ -491,6 +491,10 @@
         &-total {
             padding-top: rem(3);
             font-size: rem(17);
+
+            @include md {
+                display: none;
+            }
         }
     }
 }
