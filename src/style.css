@@ -368,6 +368,23 @@ h4 {
   }
 }
 
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+  gap: 3.125rem;
+  max-width: 87.5rem;
+  margin-top: 1.875rem;
+}
+@media screen and (max-width: 62rem) {
+  .two-columns {
+    flex-direction: column;
+    padding: 0 1.25rem;
+    gap: 0;
+    margin-top: 0.625rem;
+  }
+}
+
 /* @forward 'section'; */
 /* @forward 'section-columns'; */
 /* @forward 'footer'; */
@@ -1469,47 +1486,6 @@ h4 {
   }
 }
 
-.rates {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.625rem;
-  background-color: #f5f5f5;
-  border-radius: 0.9375rem;
-}
-
-.rates-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  border-radius: 0.9375rem;
-  padding: 1.25rem 1.875rem;
-  width: 100%;
-  height: 5rem;
-}
-.rates-item--current {
-  background-color: #FFDC42;
-}
-.rates-item p {
-  margin: 0;
-}
-.rates-item__rate {
-  font-size: 1.25rem;
-  font-weight: 600;
-  padding-bottom: 0.3125rem;
-}
-.rates-item__rate span {
-  font-size: 1.125rem;
-  font-weight: 400;
-}
-.rates-item__rate--discount {
-  color: #757575;
-  text-decoration: line-through;
-}
-
 .car-headline {
   display: flex;
   align-items: end;
@@ -1563,26 +1539,6 @@ h4 {
   }
 }
 
-.car-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 3.75rem;
-  gap: 3.125rem;
-  max-width: 87.5rem;
-  margin-top: 1.875rem;
-}
-@media screen and (max-width: 62rem) {
-  .car-container {
-    flex-direction: column;
-    padding: 0 0;
-  }
-}
-@media screen and (max-width: 62rem) {
-  .car-container {
-    gap: 0;
-  }
-}
-
 .car-content {
   display: flex;
   flex-direction: column;
@@ -1599,9 +1555,10 @@ h4 {
      object-fit: cover;
   border-radius: 1.25rem;
 }
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 62rem) {
   .car-content {
     font-size: 0.9375rem;
+    order: 1;
   }
 }
 
@@ -1806,9 +1763,13 @@ h4 {
   top: -3.25rem;
   margin-bottom: 20rem;
 }
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 62rem) {
   .car-booking-info {
-    display: none;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1928,7 +1889,6 @@ h4 {
   display: flex;
   flex-direction: column;
   padding-top: 0.9375rem;
-  padding-bottom: 0.9375rem;
   gap: 0.3125rem;
 }
 .car-booking-form__details--box {
@@ -2019,6 +1979,11 @@ h4 {
     border-radius: 0.625rem;
   }
 }
+@media screen and (max-width: 62rem) {
+  .car-booking-form__footer {
+    order: 1;
+  }
+}
 
 .car-booking-basic-conditions {
   margin-top: 1.25rem;
@@ -2068,4 +2033,183 @@ h4 {
 .car-booking-basic-conditions__item-description a {
   text-decoration: none;
   color: #EE653A;
+}
+
+.car-booking-headline {
+  font-size: 2rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 62rem) {
+  .car-booking-headline {
+    padding-top: 1.25rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .car-booking-headline {
+    font-size: 1.375rem;
+  }
+}
+
+.car-booking-cancelation {
+  display: flex;
+  gap: 0.625rem;
+  margin-top: 1.25rem;
+}
+.car-booking-cancelation__img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.car-booking-cancelation__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.car-booking-cancelation__text-title {
+  font-size: 1.0625rem;
+  font-weight: 400;
+}
+@media screen and (max-width: 48rem) {
+  .car-booking-cancelation__text-title {
+    font-size: 0.9375rem;
+  }
+}
+.car-booking-cancelation__text-description {
+  margin: 0;
+  font-weight: 300;
+}
+
+.car-booking-divider {
+  border-bottom: 1px solid rgba(215, 215, 215, 0.6);
+  margin: 1.25rem 0;
+}
+
+.car-booking-add-services__title {
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 48rem) {
+  .car-booking-add-services__title {
+    font-size: 1.25rem;
+  }
+}
+.car-booking-add-services__lead {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 0.625rem;
+}
+@media screen and (max-width: 48rem) {
+  .car-booking-add-services__lead {
+    font-size: 0.9375rem;
+  }
+}
+.car-booking-add-services__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.25rem;
+  gap: 0.9375rem;
+}
+.car-booking-add-services__item p {
+  margin: 0;
+}
+.car-booking-add-services__item a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+  border: 1px solid rgba(215, 215, 215, 0.6);
+  border-radius: 0.9375rem;
+}
+.car-booking-add-services__item a:hover {
+  border-color: rgba(238, 100, 58, 0.4352941176);
+  border-radius: 0.9375rem;
+  transition: border-color 0.3s ease;
+}
+.car-booking-add-services__item a:focus {
+  background-color: rgba(238, 101, 58, 0.1607843137);
+  border: none;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+  box-shadow: none;
+  padding: 1.3125rem;
+  transition: background-color 0.3s ease;
+}
+.car-booking-add-services__item-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-left: 0.9375rem;
+  padding-right: 0.625rem;
+  gap: 0.3125rem;
+}
+.car-booking-add-services__item-img {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+@media screen and (max-width: 48rem) {
+  .car-booking-add-services__item-img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+.car-booking-add-services__item-price {
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-align: center;
+}
+.car-booking-add-services__item-price span {
+  font-size: 1rem;
+}
+@media screen and (max-width: 48rem) {
+  .car-booking-add-services__item-price span {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .car-booking-add-services__item-price {
+    font-size: 1rem;
+  }
+}
+.car-booking-add-services__item-title {
+  font-size: 1.0625rem;
+}
+@media screen and (max-width: 48rem) {
+  .car-booking-add-services__item-title {
+    font-size: 0.9375rem;
+  }
+}
+
+.car-booking-agree {
+  display: flex;
+  align-items: center;
+  margin: 0.625rem 0 1.875rem;
+  gap: 0.625rem;
+  cursor: pointer;
+}
+.car-booking-agree a {
+  color: #2F80ED;
+  text-decoration: none;
+}
+.car-booking-agree--checkbox {
+  cursor: pointer;
+  width: 1.125rem;
+  height: 1.125rem;
+  background-color: #ce6a6a;
+}
+.car-booking-agree input:checked ~ .car-booking-agree--checkbox {
+  background-color: #4ca230;
+}
+
+.button--size-240px {
+  width: 15rem;
+  align-self: center;
+  margin-bottom: 1.875rem;
+}
+@media screen and (max-width: 48rem) {
+  .button--size-240px {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

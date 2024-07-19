@@ -1,0 +1,196 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../functions' as *;
+
+.car-booking-headline {
+    font-size: rem(32);
+    font-weight: 600;
+
+    @include md {
+        padding-top: rem(20);
+    }
+
+    @include sm {
+        font-size: rem(22);
+    }
+}
+
+.car-booking-cancelation {
+    display: flex;
+    gap: rem(10);
+    margin-top: rem(20);
+
+    &__img {
+        width: rem(24);
+        height: rem(24);
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: rem(10);
+
+        &-title {
+            font-size: rem(17);
+            font-weight: 400;
+
+            @include sm {
+                font-size: rem(15);
+            }
+        }
+
+        &-description {
+            margin: 0;
+            font-weight: 300;
+        }
+    }
+}
+
+.car-booking-divider {
+    border-bottom: 1px solid $color-gray;
+    margin: rem(20) 0;
+}
+
+.car-booking-add-services {
+    &__title {
+        font-size: rem(26);
+        font-weight: 600;
+
+        @include sm {
+            font-size: rem(20);
+        }
+    }
+
+    &__lead {
+        font-size: rem(16);
+        font-weight: 400;
+        padding-top: rem(10);
+
+        @include sm {
+            font-size: rem(15);
+        }
+    }
+
+    &__list {
+        @include list-reset;
+
+        display: flex;
+        flex-direction: column;
+        margin-top: rem(20);
+        gap: rem(15);
+    }
+
+    &__item {
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: rem(20);
+            border: 1px solid $color-gray;
+            border-radius: rem(15);
+
+            &:hover {
+                // box-shadow: 1px 0px 10px 0px (rgba(217, 217, 217, 0.5));
+                border-color: #ee643a6f;
+                border-radius: rem(15);
+                transition: border-color 0.3s ease;
+            }
+
+            &:focus {
+                background-color: #ee653a29;
+                border: none;
+                border-radius: rem(15);
+                overflow: hidden;
+                box-shadow: none;
+                padding: rem(21);
+                transition: background-color 0.3s ease;
+            }
+        }
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding-left: rem(15);
+            padding-right: rem(10);
+            gap: rem(5);
+        }
+
+        &-img {
+            width: rem(30);
+            height: rem(30);
+
+            @include sm {
+                width: rem(24);
+                height: rem(24);
+            }
+        }
+
+        &-price {
+            font-size: rem(18);
+            font-weight: 400;
+            text-align: center;
+
+            span {
+                font-size: rem(16);
+
+                @include sm {
+                    font-size: rem(14);
+                }
+            }
+
+            @include sm {
+                font-size: rem(16);
+            }
+        }
+
+        &-title {
+            font-size: rem(17);
+
+            @include sm {
+                font-size: rem(15);
+            }
+        }
+    }
+}
+
+.car-booking-agree {
+    display: flex;
+    align-items: center;
+    margin: rem(10) 0 rem(30);
+    gap: rem(10);
+    cursor: pointer;
+
+    a {
+        color: $color-text-link;
+        text-decoration: none;
+    }
+
+    &--checkbox {
+        cursor: pointer;
+        width: rem(18);
+        height: rem(18);
+        background-color: #ce6a6a;
+        // opacity: 0;
+    }
+
+    input:checked~.car-booking-agree--checkbox {
+        background-color: #4ca230;
+    }
+}
+
+.button--size-240px {
+    width: rem(240);
+    align-self: center;
+    margin-bottom: rem(30);
+
+    @include sm {
+        display: none;
+    }
+}
