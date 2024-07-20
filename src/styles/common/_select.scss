@@ -15,6 +15,7 @@
     border: none;
     outline: none;
     appearance: none;
+    -webkit-appearance: none;
     cursor: pointer;
 
     padding-right: calc($padding-x * 2 + $icon-width);
