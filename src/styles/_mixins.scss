@@ -7,7 +7,7 @@
         src:
             local($font-name),
             url($file-path + '.ttf') format("truetype-variable");
-        font-weight: 100 900;
+        font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
         font-style: $style;
     }
 }
