@@ -408,6 +408,10 @@
 
     &__container {
         padding: rem(20) rem(30) rem(20);
+
+        @include sm {
+            padding: rem(20);
+        }
     }
 
     &__car-name {

@@ -861,6 +861,11 @@ h4 {
 .car-booking-form--finish__container {
   padding: 1.25rem 1.875rem 1.25rem;
 }
+@media screen and (max-width: 48rem) {
+  .car-booking-form--finish__container {
+    padding: 1.25rem;
+  }
+}
 .car-booking-form--finish__car-name {
   font-size: 1.625rem;
   font-weight: 600;
