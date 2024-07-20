@@ -199,6 +199,30 @@ h4 {
   background-position: calc(100% - (1rem + 0.75rem / 2)) 50%, calc(100% - 1rem) 50%, 100% 0;
 }
 
+.car-rating {
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+}
+.car-rating__img {
+  width: 1.375rem;
+  height: 1.375rem;
+  color: #FFDC42;
+}
+.car-rating__img--orange {
+  color: #EE653A;
+}
+.car-rating span {
+  font-size: 1rem;
+  font-weight: 400;
+  order: 1;
+  padding-left: 0.3125rem;
+}
+@media screen and (max-width: 48rem) {
+  .car-rating {
+    font-size: 1.125rem;
+  }
+}
 .header {
   color: #333333;
   padding: 0.625rem 0;
@@ -479,6 +503,16 @@ h4 {
   flex-direction: column;
   align-items: center;
 }
+.booking-form__title {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 1.25rem;
+}
+@media screen and (max-width: 48rem) {
+  .booking-form__title {
+    font-size: 1.625rem;
+  }
+}
 .booking-form > button {
   width: 100%;
 }
@@ -535,17 +569,6 @@ h4 {
 @media screen and (max-width: 48rem) {
   .booking-form--cars-page--mobile {
     margin: 0 0 1.875rem;
-  }
-}
-
-.booking-form__title {
-  font-size: 2rem;
-  font-weight: 600;
-  padding-bottom: 1.25rem;
-}
-@media screen and (max-width: 48rem) {
-  .booking-form__title {
-    font-size: 1.625rem;
   }
 }
 
@@ -607,6 +630,336 @@ h4 {
     position: sticky;
     top: 0;
     margin-bottom: -20px;
+  }
+}
+
+.car-booking-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFDC42;
+  border-radius: 1.25rem;
+  padding: 1.875rem;
+  margin-top: 3.25rem;
+}
+@media screen and (max-width: 62rem) {
+  .car-booking-form {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 62rem) {
+  .car-booking-form {
+    padding: 1.25rem;
+  }
+}
+.car-booking-form p {
+  margin: 0;
+}
+.car-booking-form__price {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.3125rem;
+}
+@media screen and (max-width: 48rem) {
+  .car-booking-form__price {
+    font-size: 1.625rem;
+    padding: 0;
+  }
+}
+.car-booking-form__price span {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+@media screen and (max-width: 48rem) {
+  .car-booking-form__price span {
+    font-size: 1rem;
+  }
+}
+.car-booking-form__minmax {
+  text-align: center;
+  padding-top: 0.625rem;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  color: #333333;
+}
+.car-booking-form__minmax span {
+  padding: 0 0.3125rem;
+  font-weight: 600;
+}
+.car-booking-form__dates {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1.25rem;
+  border-radius: 0.9375rem;
+  margin-top: 0.625rem;
+}
+.car-booking-form__date {
+  display: flex;
+  align-items: center;
+}
+.car-booking-form__date::before {
+  content: "";
+  background-image: url("assets/images/icons/icon-calendar.svg");
+  width: 0.75rem;
+  height: 0.75rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 12px;
+}
+.car-booking-form__img {
+  width: 1.125rem;
+}
+.car-booking-form__time-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.9375rem;
+  gap: 1.25rem;
+}
+.car-booking-form__time-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.car-booking-form__time-title {
+  padding-bottom: 0.625rem;
+  letter-spacing: 0.2px;
+}
+.car-booking-form__time {
+  background-color: #fff;
+  padding: 1.25rem;
+  border-radius: 0.9375rem;
+  display: flex;
+  align-items: center;
+}
+.car-booking-form__time::before {
+  content: "";
+  background-image: url("assets/images/icons/icon-time.svg");
+  width: 1rem;
+  height: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 10px;
+}
+.car-booking-form__details {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.9375rem;
+  gap: 0.3125rem;
+}
+.car-booking-form__details--box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.car-booking-form__details--box p {
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+.car-booking-form__details-discount-title {
+  color: #EE653A;
+  display: flex;
+  align-items: center;
+}
+.car-booking-form__details-discount-title::before {
+  content: "";
+  background-image: url("assets/images/icons/icon-discount.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 1.25rem;
+  height: 1.125rem;
+  transform: rotate(180deg);
+  margin-left: -0.1875rem;
+}
+.car-booking-form__details-discount-title span {
+  font-size: 0.75rem;
+  margin-left: 0.3125rem;
+  padding: 0.1875rem;
+  border: 1px solid;
+  border-radius: 0.3125rem;
+}
+.car-booking-form__details-discount-sum {
+  color: #EE653A;
+}
+.car-booking-form__details-total {
+  padding-top: 0.1875rem;
+  font-size: 1.0625rem;
+}
+@media screen and (max-width: 62rem) {
+  .car-booking-form__details-total {
+    display: none;
+  }
+}
+
+.car-booking-form__footer {
+  display: none;
+}
+@media screen and (max-width: 62rem) {
+  .car-booking-form__footer {
+    position: sticky;
+    bottom: 0;
+    padding: 12px 13px;
+    display: block;
+    background-color: #FFDC42;
+    border-radius: 1.25rem;
+  }
+  .car-booking-form__footer-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .car-booking-form__footer-box p {
+    margin: 0;
+  }
+  .car-booking-form__footer-sum {
+    padding-left: 0.625rem;
+    font-size: 1.375rem;
+  }
+  .car-booking-form__footer-text {
+    flex-grow: 1;
+    padding-left: 10px;
+  }
+  .car-booking-form__footer-button {
+    padding: 0.8125rem 1.875rem;
+    border-radius: 0.625rem;
+  }
+}
+@media screen and (max-width: 62rem) {
+  .car-booking-form__footer {
+    order: 1;
+  }
+}
+
+.car-booking-form--finish {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFDC42;
+  border-radius: 1.25rem;
+  margin-top: 3.25rem;
+}
+@media screen and (max-width: 62rem) {
+  .car-booking-form--finish {
+    margin-top: 0;
+  }
+}
+.car-booking-form--finish p {
+  margin: 0;
+}
+.car-booking-form--finish__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.car-booking-form--finish__container {
+  padding: 1.25rem 1.875rem 1.25rem;
+}
+.car-booking-form--finish__car-name {
+  font-size: 1.625rem;
+  font-weight: 600;
+  padding-bottom: 0.3125rem;
+}
+@media screen and (max-width: 48rem) {
+  .car-booking-form--finish__car-name {
+    font-size: 1.625rem;
+  }
+}
+.car-booking-form--finish__car-name span {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+@media screen and (max-width: 48rem) {
+  .car-booking-form--finish__car-name span {
+    font-size: 1rem;
+  }
+}
+.car-booking-form--finish__dates {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0.9375rem;
+  border-radius: 0.9375rem;
+  margin-top: 0.625rem;
+}
+.car-booking-form--finish__dates-date {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.car-booking-form--finish__dates-date::before {
+  content: "";
+  background-image: url("assets/images/icons/icon-calendar2.svg");
+  width: 1.25rem;
+  height: 1.25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 12px;
+}
+.car-booking-form--finish__dates-time {
+  padding-left: 2rem;
+  padding-top: 0.3125rem;
+}
+.car-booking-form--finish__dates-img {
+  width: 1.125rem;
+}
+.car-booking-form--finish__details {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.9375rem;
+  gap: 0.3125rem;
+}
+.car-booking-form--finish__details--box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.car-booking-form--finish__details--box p {
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+.car-booking-form--finish__details-discount-title {
+  color: #EE653A;
+  display: flex;
+  align-items: center;
+}
+.car-booking-form--finish__details-discount-title::before {
+  content: "";
+  background-image: url("assets/images/icons/icon-discount.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 1.25rem;
+  height: 1.125rem;
+  transform: rotate(180deg);
+  margin-left: -0.1875rem;
+}
+.car-booking-form--finish__details-discount-title span {
+  font-size: 0.75rem;
+  margin-left: 0.3125rem;
+  padding: 0.1875rem;
+  border: 1px solid;
+  border-radius: 0.3125rem;
+}
+.car-booking-form--finish__details-discount-sum {
+  color: #EE653A;
+}
+.car-booking-form--finish__details-total {
+  padding-top: 0.1875rem;
+  font-size: 1.0625rem;
+}
+@media screen and (max-width: 62rem) {
+  .car-booking-form--finish__details-total {
+    display: none;
   }
 }
 
@@ -1551,32 +1904,6 @@ h4 {
     padding: 0;
   }
 }
-.car-headline__rating {
-  font-size: 1.125rem;
-  display: flex;
-  align-items: center;
-}
-.car-headline__rating::after {
-  content: "";
-  background-image: url("assets/images/icons/icon-star-fill.svg");
-  width: 1.5rem;
-  height: 1.5rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-left: 0.25rem;
-}
-.car-headline__rating span {
-  font-size: 1rem;
-  font-weight: 400;
-  order: 1;
-  padding-left: 0.1875rem;
-}
-@media screen and (max-width: 48rem) {
-  .car-headline__rating {
-    font-size: 1.125rem;
-  }
-}
 
 .car-content {
   display: flex;
@@ -1808,224 +2135,7 @@ h4 {
     max-width: 100%;
     max-height: 100%;
     margin-bottom: 0;
-    top: 0rem;
-  }
-}
-
-.car-booking-form {
-  display: flex;
-  flex-direction: column;
-  background-color: #FFDC42;
-  border-radius: 1.25rem;
-  padding: 1.875rem;
-  margin-top: 3.25rem;
-}
-@media screen and (max-width: 62rem) {
-  .car-booking-form {
-    margin-top: 0;
-  }
-}
-@media screen and (max-width: 62rem) {
-  .car-booking-form {
-    padding: 1.25rem;
-  }
-}
-.car-booking-form p {
-  margin: 0;
-}
-.car-booking-form__price {
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
-  padding: 0.3125rem;
-}
-@media screen and (max-width: 48rem) {
-  .car-booking-form__price {
-    font-size: 1.625rem;
-    padding: 0;
-  }
-}
-.car-booking-form__price span {
-  font-size: 1.25rem;
-  font-weight: 400;
-}
-@media screen and (max-width: 48rem) {
-  .car-booking-form__price span {
-    font-size: 1rem;
-  }
-}
-.car-booking-form__minmax {
-  text-align: center;
-  padding-top: 0.625rem;
-  font-size: 0.9375rem;
-  font-weight: 300;
-  color: #333333;
-}
-.car-booking-form__minmax span {
-  padding: 0 0.3125rem;
-  font-weight: 600;
-}
-.car-booking-form__dates {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #fff;
-  padding: 1.25rem;
-  border-radius: 0.9375rem;
-  margin-top: 0.625rem;
-}
-.car-booking-form__date {
-  display: flex;
-  align-items: center;
-}
-.car-booking-form__date::before {
-  content: "";
-  background-image: url("assets/images/icons/icon-calendar.svg");
-  width: 0.75rem;
-  height: 0.75rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-left: 12px;
-}
-.car-booking-form__img {
-  width: 1.125rem;
-}
-.car-booking-form__time-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 0.9375rem;
-  gap: 1.25rem;
-}
-.car-booking-form__time-block {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.car-booking-form__time-title {
-  padding-bottom: 0.625rem;
-  letter-spacing: 0.2px;
-}
-.car-booking-form__time {
-  background-color: #fff;
-  padding: 1.25rem;
-  border-radius: 0.9375rem;
-  display: flex;
-  align-items: center;
-}
-.car-booking-form__time::before {
-  content: "";
-  background-image: url("assets/images/icons/icon-time.svg");
-  width: 1rem;
-  height: 1rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-left: 10px;
-}
-.car-booking-form__details {
-  display: flex;
-  flex-direction: column;
-  padding-top: 0.9375rem;
-  gap: 0.3125rem;
-}
-.car-booking-form__details--box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.car-booking-form__details--box p {
-  margin: 0;
-  letter-spacing: 0.2px;
-}
-.car-booking-form__details-discount-title {
-  color: #EE653A;
-  display: flex;
-  align-items: center;
-}
-.car-booking-form__details-discount-title::before {
-  content: "";
-  background-image: url("assets/images/icons/icon-discount.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 1.25rem;
-  height: 1.125rem;
-  transform: rotate(180deg);
-  margin-left: -0.1875rem;
-}
-.car-booking-form__details-discount-title span {
-  font-size: 0.75rem;
-  margin-left: 0.3125rem;
-  padding: 0.1875rem;
-  border: 1px solid;
-  border-radius: 0.3125rem;
-}
-.car-booking-form__details-discount-sum {
-  color: #EE653A;
-}
-.car-booking-form__details-total {
-  padding-top: 0.1875rem;
-  font-size: 1.0625rem;
-}
-@media screen and (max-width: 62rem) {
-  .car-booking-form__details-total {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 62rem) {
-  .disable-mobile {
-    display: none;
-  }
-}
-
-.disable-desctop {
-  display: none;
-}
-@media screen and (max-width: 62rem) {
-  .disable-desctop {
-    display: block;
-  }
-}
-
-.car-booking-form__footer {
-  display: none;
-}
-@media screen and (max-width: 62rem) {
-  .car-booking-form__footer {
-    position: sticky;
-    bottom: 0;
-    padding: 12px 13px;
-    display: block;
-    background-color: #FFDC42;
-    border-radius: 1.25rem;
-  }
-  .car-booking-form__footer-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .car-booking-form__footer-box p {
-    margin: 0;
-  }
-  .car-booking-form__footer-sum {
-    padding-left: 0.625rem;
-    font-size: 1.375rem;
-  }
-  .car-booking-form__footer-text {
-    flex-grow: 1;
-    padding-left: 10px;
-  }
-  .car-booking-form__footer-button {
-    padding: 0.8125rem 1.875rem;
-    border-radius: 0.625rem;
-  }
-}
-@media screen and (max-width: 62rem) {
-  .car-booking-form__footer {
-    order: 1;
+    top: 0;
   }
 }
 
@@ -2081,6 +2191,21 @@ h4 {
 @media screen and (max-width: 48rem) {
   .car-booking-basic-conditions__item-description {
     font-size: 0.9375rem;
+  }
+}
+
+@media screen and (max-width: 62rem) {
+  .disable-mobile {
+    display: none;
+  }
+}
+
+.disable-desctop {
+  display: none;
+}
+@media screen and (max-width: 62rem) {
+  .disable-desctop {
+    display: block;
   }
 }
 

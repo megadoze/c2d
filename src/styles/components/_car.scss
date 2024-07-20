@@ -27,34 +27,6 @@
             padding: 0;
         }
     }
-
-    &__rating {
-        font-size: rem(18);
-        display: flex;
-        align-items: center;
-
-        &::after {
-            content: "";
-            background-image: url('assets/images/icons/icon-star-fill.svg');
-            width: rem(24);
-            height: rem(24);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            padding-left: rem(4);
-        }
-
-        span {
-            font-size: rem(16);
-            font-weight: 400;
-            order: 1;
-            padding-left: rem(3);
-        }
-
-        @include sm {
-            font-size: rem(18);
-        }
-    }
 }
 
 .car-content {
@@ -300,265 +272,12 @@
     top: rem(-52);
     margin-bottom: rem(320);
 
-    // @include md {
-    //     display: none;
-    // }
-
     @include md {
         position: relative;
         max-width: 100%;
         max-height: 100%;
-        // top: 0;
         margin-bottom: 0;
-        top: rem(0);
-    }
-}
-
-.car-booking-form {
-    display: flex;
-    flex-direction: column;
-    // border: 1px solid $color-gray;
-    background-color: $color-form;
-    border-radius: rem(20);
-    padding: rem(30);
-    margin-top: rem(52);
-
-    @include md {
-        margin-top: 0;
-    }
-
-    @include md {
-        padding: rem(20);
-        // position: sticky;
-        // top: 0;
-    }
-
-    p {
-        margin: 0;
-    }
-
-    &__price {
-        font-size: rem(32);
-        font-weight: 600;
-        text-align: center;
-        // background-color: $bg-light;
-        padding: rem(5);
-        // border-radius: rem(15);
-
-        @include sm {
-            font-size: rem(26);
-            padding: 0;
-        }
-
-        span {
-            font-size: rem(20);
-            font-weight: 400;
-
-            @include sm {
-                font-size: rem(16);
-            }
-        }
-    }
-
-    &__minmax {
-        text-align: center;
-        padding-top: rem(10);
-        font-size: rem(15);
-        font-weight: 300;
-        color: $color-text-black;
-
-        span {
-            padding: 0 rem(5);
-            font-weight: 600;
-        }
-    }
-
-    &__dates {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        // border: 1px solid $color-gray;
-        background-color: $bg-light;
-        padding: rem(20);
-        border-radius: rem(15);
-        margin-top: rem(10);
-    }
-
-    &__date {
-        display: flex;
-        align-items: center;
-
-        &::before {
-            content: "";
-            background-image: url('assets/images/icons/icon-calendar.svg');
-            width: rem(12);
-            height: rem(12);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            padding-left: 12px;
-        }
-    }
-
-    &__img {
-        width: rem(18);
-    }
-
-    &__time-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: rem(15);
-        gap: rem(20);
-    }
-
-    &__time-block {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    &__time-title {
-        padding-bottom: rem(10);
-        letter-spacing: 0.2px;
-    }
-
-    &__time {
-        // border: 1px solid $color-gray;
-        background-color: $bg-light;
-        padding: rem(20);
-        border-radius: rem(15);
-        display: flex;
-        align-items: center;
-
-        &::before {
-            content: "";
-            background-image: url('assets/images/icons/icon-time.svg');
-            width: rem(16);
-            height: rem(16);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            padding-left: 10px;
-        }
-    }
-
-    &__details {
-        display: flex;
-        flex-direction: column;
-        padding-top: rem(15);
-        // padding-bottom: rem(15);
-        gap: rem(5);
-
-        &--box {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            p {
-                margin: 0;
-                letter-spacing: 0.2px;
-            }
-        }
-
-        &-discount-title {
-            color: $color-primary;
-            display: flex;
-            align-items: center;
-
-            &::before {
-                content: "";
-                background-image: url('assets/images/icons/icon-discount.svg');
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
-                width: rem(20);
-                height: rem(18);
-                transform: rotate(180deg);
-                margin-left: rem(-3);
-            }
-
-            span {
-                font-size: rem(12);
-                margin-left: rem(5);
-                padding: rem(3);
-                border: 1px solid;
-                border-radius: rem(5);
-            }
-        }
-
-        &-discount-sum {
-            color: $color-primary;
-        }
-
-        &-total {
-            padding-top: rem(3);
-            font-size: rem(17);
-
-            @include md {
-                display: none;
-            }
-        }
-    }
-}
-
-.disable-mobile {
-    @include md {
-        display: none;
-    }
-}
-
-.disable-desctop {
-    display: none;
-
-    @include md {
-        display: block;
-    }
-}
-
-.car-booking-form__footer {
-    display: none;
-
-    @include md {
-
-        position: sticky;
-        bottom: 0;
-        // background-color: $bg-light;
-        // margin: 0px -20px;
-        padding: 12px 13px;
-        // border-top: 1px solid $color-gray;
-        display: block;
-        background-color: $color-form;
-        border-radius: rem(20);
-
-        &-box {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            p {
-                margin: 0;
-            }
-        }
-
-        &-sum {
-            padding-left: rem(10);
-            font-size: rem(22);
-        }
-
-        &-text {
-            flex-grow: 1;
-            padding-left: 10px;
-        }
-
-        &-button {
-            padding: rem(13) rem(30);
-            border-radius: rem(10);
-        }
-    }
-
-    @include md {
-        order: 1;
+        top: 0;
     }
 }
 
@@ -566,7 +285,6 @@
     margin-top: rem(20);
     padding: rem(30);
     border-radius: rem(20);
-    // border: 1px solid $color-gray;
     background-color: $bg-gray;
 
     @include md {
@@ -618,5 +336,19 @@
                 font-size: rem(15);
             }
         }
+    }
+}
+
+.disable-mobile {
+    @include md {
+        display: none;
+    }
+}
+
+.disable-desctop {
+    display: none;
+
+    @include md {
+        display: block;
     }
 }
