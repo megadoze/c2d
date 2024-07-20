@@ -1789,8 +1789,6 @@ h4 {
 @media screen and (max-width: 62rem) {
   .car-booking-form {
     padding: 1.25rem;
-    position: sticky;
-    top: 0;
   }
 }
 .car-booking-form p {
