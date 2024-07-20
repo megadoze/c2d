@@ -147,6 +147,9 @@ h4 {
   font-size: 0.9375rem;
   border: none;
   outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   cursor: pointer;
   padding-right: calc(1rem * 2 + 0.75rem);
   background-repeat: no-repeat;
