@@ -906,12 +906,12 @@ h4 {
 }
 @media screen and (max-width: 48rem) {
   .car-booking-form--finish__car-name {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
     padding-bottom: 0.1875rem;
   }
 }
 .car-booking-form--finish__car-name span {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 400;
 }
 @media screen and (max-width: 48rem) {
