@@ -11,6 +11,12 @@
         width: rem(22);
         height: rem(22);
         color: $color-form;
+        margin-left: rem(2);
+
+        @include sm {
+            width: rem(20);
+            height: rem(20);
+        }
 
         &--orange {
             color: $color-primary;
@@ -22,11 +28,13 @@
         font-weight: 400;
         order: 1;
         padding-left: rem(5);
+
+        @include sm {
+            font-size: rem(15);
+        }
     }
 
     @include sm {
-        font-size: rem(18);
+        font-size: rem(16);
     }
-
-    &--orange {}
 }

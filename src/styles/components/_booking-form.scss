@@ -391,7 +391,7 @@
     margin-top: rem(52);
 
     @include md {
-        margin-top: 0;
+        margin-top: rem(0);
     }
 
     p {
@@ -425,6 +425,7 @@
 
         @include sm {
             font-size: rem(26);
+            padding-bottom: rem(3);
         }
 
         span {
@@ -444,7 +445,7 @@
         background-color: $bg-light;
         padding: rem(14);
         border-radius: rem(15);
-        margin-top: rem(10);
+        margin-top: rem(15);
 
         &-date {
             display: flex;
@@ -480,10 +481,6 @@
         &-title {
             padding-bottom: rem(10);
             padding-left: rem(10);
-        }
-
-        &-select {
-            border-radius: rem(10);
         }
     }
 
@@ -540,7 +537,7 @@
         align-items: center;
         justify-content: space-between;
         font-size: rem(17);
-        background-color: #ffb9a3a6;
+        background-color: rgb(255 180 0 / 36%);
         padding: rem(10);
         border-radius: rem(10);
         margin-top: rem(10);

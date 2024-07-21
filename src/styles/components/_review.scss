@@ -66,10 +66,9 @@
         &__img {
             width: rem(24);
             height: rem(24);
+            color: $color-form;
         }
     }
-
-
 }
 
 .review-list {
@@ -122,6 +121,7 @@
     &__rating-box-img {
         width: rem(20);
         height: rem(20);
+        color: $color-form;
     }
 
     .container-review-text {
