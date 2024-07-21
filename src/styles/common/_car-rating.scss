@@ -27,10 +27,10 @@
         font-size: rem(16);
         font-weight: 400;
         order: 1;
-        padding-left: rem(5);
+        padding-left: rem(4);
 
         @include sm {
-            font-size: rem(15);
+            font-size: rem(14);
         }
     }
 
