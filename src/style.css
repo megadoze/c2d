@@ -859,12 +859,15 @@ h4 {
   border-bottom-right-radius: 0;
 }
 .car-booking-form--finish__container {
-  padding: 1.25rem 1.875rem 1.25rem;
+  padding: 1.25rem 1.875rem 1.875rem;
 }
 @media screen and (max-width: 48rem) {
   .car-booking-form--finish__container {
     padding: 1.25rem;
   }
+}
+.car-booking-form--finish__car-name-container {
+  padding-left: 0.625rem;
 }
 .car-booking-form--finish__car-name {
   font-size: 1.625rem;
@@ -890,7 +893,7 @@ h4 {
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  padding: 0.9375rem;
+  padding: 0.875rem;
   border-radius: 0.9375rem;
   margin-top: 0.625rem;
 }
@@ -898,29 +901,39 @@ h4 {
   display: flex;
   align-items: center;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 .car-booking-form--finish__dates-date::before {
   content: "";
   background-image: url("assets/images/icons/icon-calendar2.svg");
   width: 1.25rem;
   height: 1.25rem;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
-  padding-left: 12px;
+  padding-left: 8px;
 }
 .car-booking-form--finish__dates-time {
-  padding-left: 2rem;
+  padding-left: 1.6875rem;
   padding-top: 0.3125rem;
 }
 .car-booking-form--finish__dates-img {
   width: 1.125rem;
 }
+.car-booking-form--finish__location {
+  padding-top: 0.9375rem;
+}
+.car-booking-form--finish__location-title {
+  padding-bottom: 0.625rem;
+  padding-left: 0.625rem;
+}
+.car-booking-form--finish__location-select {
+  border-radius: 0.625rem;
+}
 .car-booking-form--finish__details {
   display: flex;
   flex-direction: column;
-  padding-top: 0.9375rem;
+  padding: 0.9375rem 0.625rem 0;
   gap: 0.3125rem;
 }
 .car-booking-form--finish__details--box {
@@ -958,12 +971,18 @@ h4 {
 .car-booking-form--finish__details-discount-sum {
   color: #EE653A;
 }
-.car-booking-form--finish__details-total {
-  padding-top: 0.1875rem;
+.car-booking-form--finish__total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 1.0625rem;
+  background-color: rgba(255, 185, 163, 0.6509803922);
+  padding: 0.625rem;
+  border-radius: 0.625rem;
+  margin-top: 0.625rem;
 }
 @media screen and (max-width: 62rem) {
-  .car-booking-form--finish__details-total {
+  .car-booking-form--finish__total {
     display: none;
   }
 }
