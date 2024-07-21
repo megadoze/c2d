@@ -339,7 +339,6 @@
     display: none;
 
     @include md {
-
         position: sticky;
         bottom: 0;
         // background-color: $bg-light;
@@ -362,12 +361,15 @@
 
         &-sum {
             padding-left: rem(10);
-            font-size: rem(22);
+            font-size: rem(18);
+            font-weight: 600;
         }
 
         &-text {
             flex-grow: 1;
-            padding-left: 10px;
+            padding-left: rem(10);
+            font-size: rem(16);
+            font-weight: 300;
         }
 
         &-button {
@@ -416,6 +418,10 @@
 
     &__car-name-container {
         padding-left: rem(10);
+
+        @include md {
+            padding-left: 0;
+        }
     }
 
     &__car-name {
@@ -481,6 +487,10 @@
         &-title {
             padding-bottom: rem(10);
             padding-left: rem(10);
+
+            @include md {
+                padding-left: 0;
+            }
         }
     }
 
@@ -489,6 +499,10 @@
         flex-direction: column;
         padding: rem(15) rem(10) 0;
         gap: rem(5);
+
+        @include md {
+            padding: rem(15) 0 0;
+        }
 
         &--box {
             display: flex;

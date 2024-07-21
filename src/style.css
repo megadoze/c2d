@@ -149,7 +149,7 @@ h4 {
   color: #FFFFFF;
   background-color: #EE653A;
   padding: 1.25rem 3.75rem;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 10px;
   letter-spacing: 0.2px;
 }
@@ -835,11 +835,14 @@ h4 {
   }
   .car-booking-form__footer-sum {
     padding-left: 0.625rem;
-    font-size: 1.375rem;
+    font-size: 1.125rem;
+    font-weight: 600;
   }
   .car-booking-form__footer-text {
     flex-grow: 1;
-    padding-left: 10px;
+    padding-left: 0.625rem;
+    font-size: 1rem;
+    font-weight: 300;
   }
   .car-booking-form__footer-button {
     padding: 0.8125rem 1.875rem;
@@ -885,6 +888,11 @@ h4 {
 }
 .car-booking-form--finish__car-name-container {
   padding-left: 0.625rem;
+}
+@media screen and (max-width: 62rem) {
+  .car-booking-form--finish__car-name-container {
+    padding-left: 0;
+  }
 }
 .car-booking-form--finish__car-name {
   font-size: 1.625rem;
@@ -945,11 +953,21 @@ h4 {
   padding-bottom: 0.625rem;
   padding-left: 0.625rem;
 }
+@media screen and (max-width: 62rem) {
+  .car-booking-form--finish__location-title {
+    padding-left: 0;
+  }
+}
 .car-booking-form--finish__details {
   display: flex;
   flex-direction: column;
   padding: 0.9375rem 0.625rem 0;
   gap: 0.3125rem;
+}
+@media screen and (max-width: 62rem) {
+  .car-booking-form--finish__details {
+    padding: 0.9375rem 0 0;
+  }
 }
 .car-booking-form--finish__details--box {
   display: flex;
