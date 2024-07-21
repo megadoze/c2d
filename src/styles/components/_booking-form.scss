@@ -430,7 +430,7 @@
         padding-bottom: rem(5);
 
         @include sm {
-            font-size: rem(26);
+            font-size: rem(20);
             padding-bottom: rem(3);
         }
 
@@ -469,11 +469,19 @@
                 background-size: contain;
                 padding-left: 8px;
             }
+
+            @include sm {
+                font-size: rem(15);
+            }
         }
 
         &-time {
             padding-left: rem(27);
             padding-top: rem(5);
+
+            @include sm {
+                font-size: rem(15);
+            }
         }
 
         &-img {

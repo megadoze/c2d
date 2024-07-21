@@ -185,7 +185,7 @@ h4 {
   padding: 0.9375rem 0.9375rem;
   background-color: #fff;
   color: #333333;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -196,6 +196,11 @@ h4 {
   background-position: right;
   background-repeat: no-repeat;
   background-size: 35px 20px;
+}
+@media screen and (max-width: 48rem) {
+  .select {
+    font-size: 0.9375rem;
+  }
 }
 .select--round {
   border-radius: 0.625rem;
@@ -901,7 +906,7 @@ h4 {
 }
 @media screen and (max-width: 48rem) {
   .car-booking-form--finish__car-name {
-    font-size: 1.625rem;
+    font-size: 1.25rem;
     padding-bottom: 0.1875rem;
   }
 }
@@ -939,9 +944,19 @@ h4 {
   background-size: contain;
   padding-left: 8px;
 }
+@media screen and (max-width: 48rem) {
+  .car-booking-form--finish__dates-date {
+    font-size: 0.9375rem;
+  }
+}
 .car-booking-form--finish__dates-time {
   padding-left: 1.6875rem;
   padding-top: 0.3125rem;
+}
+@media screen and (max-width: 48rem) {
+  .car-booking-form--finish__dates-time {
+    font-size: 0.9375rem;
+  }
 }
 .car-booking-form--finish__dates-img {
   width: 1.125rem;
