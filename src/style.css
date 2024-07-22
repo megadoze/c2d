@@ -2624,7 +2624,7 @@ h4 {
 }
 @media screen and (max-width: 48rem) {
   .car-booking-guest__info--input {
-    font-size: 0.9375rem;
+    font-size: 1rem;
   }
 }
 .car-booking-guest__info--comment {
@@ -2650,6 +2650,6 @@ h4 {
 }
 @media screen and (max-width: 48rem) {
   .car-booking-guest__info--comment {
-    font-size: 0.9375rem;
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

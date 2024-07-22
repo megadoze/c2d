@@ -207,13 +207,9 @@
     }
 
     input[type="checkbox"] {
-        // place-content: center;
-        // font: inherit;
-        // color: currentColor;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        // outline: none;
     }
 
     &--checkbox {
@@ -229,12 +225,6 @@
 
             &::after {
                 content: '';
-                // content: '\2714';
-                // align-self: center;
-                // text-align: center;
-                // width: 100%;
-                // font-family: $font-base;
-                // font-size: 18px;
                 background-image: url('assets/images/icons/icon-check.svg');
                 background-position: center;
                 background-repeat: no-repeat;
@@ -337,7 +327,7 @@
             }
 
             @include sm {
-                font-size: rem(15);
+                font-size: rem(16);
             }
         }
 
@@ -363,7 +353,7 @@
             }
 
             @include sm {
-                font-size: rem(15);
+                font-size: rem(16);
             }
         }
     }
