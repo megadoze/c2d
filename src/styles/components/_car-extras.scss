@@ -193,7 +193,7 @@
     display: flex;
     align-items: center;
     margin: rem(20) 0 rem(30);
-    gap: rem(10);
+    gap: rem(8);
     cursor: pointer;
 
     @include sm {
@@ -207,6 +207,16 @@
 
     &--checkbox {
         cursor: pointer;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        flex-shrink: 0;
+
+
+        @include sm {
+            width: 16px;
+            height: 16px;
+        }
     }
 
     input:checked~.car-booking-agree--checkbox {
