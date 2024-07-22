@@ -2508,13 +2508,13 @@ h4 {
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 1.1875rem;
+  height: 1.1875rem;
 }
 @media screen and (max-width: 48rem) {
   .car-booking-agree--checkbox:checked::after {
-    width: 18px;
-    height: 18px;
+    width: 17px;
+    height: 17px;
   }
 }
 @media screen and (max-width: 48rem) {

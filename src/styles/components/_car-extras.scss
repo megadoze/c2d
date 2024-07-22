@@ -240,12 +240,12 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 display: block;
-                width: 20px;
-                height: 20px;
+                width: rem(19);
+                height: rem(19);
 
                 @include sm {
-                    width: 18px;
-                    height: 18px;
+                    width: 17px;
+                    height: 17px;
                 }
             }
         }
