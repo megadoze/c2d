@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Epilogue";
   src: local("Epilogue"), url("../assets/fonts/Epilogue.ttf") format("truetype-variable");
@@ -2470,6 +2471,8 @@ h4 {
 .car-booking-agree {
   display: flex;
   align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: 1.25rem 0 1.875rem;
   gap: 0.5rem;
   cursor: pointer;
@@ -2483,12 +2486,37 @@ h4 {
   color: #EE653A;
   text-decoration: none;
 }
+.car-booking-agree input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
 .car-booking-agree--checkbox {
   cursor: pointer;
   width: 20px;
   height: 20px;
+  border: 1px solid #EE653A;
+  border-radius: 0.1875rem;
   cursor: pointer;
   flex-shrink: 0;
+  display: flex;
+}
+.car-booking-agree--checkbox:checked {
+  background-color: #EE653A;
+}
+.car-booking-agree--checkbox:checked::after {
+  content: "✔";
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+@media screen and (max-width: 48rem) {
+  .car-booking-agree--checkbox:checked::after {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 48rem) {
   .car-booking-agree--checkbox {

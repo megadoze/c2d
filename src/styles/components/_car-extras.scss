@@ -192,6 +192,7 @@
 .car-booking-agree {
     display: flex;
     align-items: center;
+    width: fit-content;
     margin: rem(20) 0 rem(30);
     gap: rem(8);
     cursor: pointer;
@@ -205,13 +206,37 @@
         text-decoration: none;
     }
 
+    input[type=checkbox] {
+        appearance: none;
+    }
+
     &--checkbox {
         cursor: pointer;
         width: 20px;
         height: 20px;
+        border: 1px solid $color-primary;
+        border-radius: rem(3);
         cursor: pointer;
         flex-shrink: 0;
+        display: flex;
 
+        &:checked {
+            background-color: $color-primary;
+
+            &::after {
+                content: '\2714';
+                align-self: center;
+                text-align: center;
+                width: 100%;
+                font-family: $font-base;
+                font-size: 18px;
+                color: white;
+
+                @include sm {
+                    font-size: 14px;
+                }
+            }
+        }
 
         @include sm {
             width: 16px;
