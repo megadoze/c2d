@@ -2487,9 +2487,9 @@ h4 {
   text-decoration: none;
 }
 .car-booking-agree input[type=checkbox] {
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
 }
 .car-booking-agree--checkbox {
   cursor: pointer;
