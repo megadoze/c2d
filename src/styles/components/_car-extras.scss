@@ -46,12 +46,14 @@
     }
 }
 
-.car-booking-divider {
-    border-bottom: 1px solid $color-gray;
-    margin: rem(20) 0;
-}
-
 .car-booking-add-services {
+    margin-top: rem(30);
+
+    @include sm {
+        margin-top: rem(20);
+    }
+
+
     &__title {
         font-size: rem(26);
         font-weight: 600;
@@ -78,6 +80,10 @@
         flex-direction: column;
         margin-top: rem(20);
         gap: rem(15);
+
+        @include sm {
+            gap: rem(10);
+        }
     }
 
     &__item {
@@ -113,6 +119,8 @@
             }
 
             @include sm {
+                padding: rem(15);
+
                 &:hover {
                     background-color: #ee653a29;
                     border: none;
@@ -184,9 +192,13 @@
 .car-booking-agree {
     display: flex;
     align-items: center;
-    margin: rem(10) 0 rem(30);
+    margin: rem(20) 0 rem(30);
     gap: rem(10);
     cursor: pointer;
+
+    @include sm {
+        align-items: flex-start;
+    }
 
     a {
         color: $color-primary;
@@ -195,10 +207,6 @@
 
     &--checkbox {
         cursor: pointer;
-        width: rem(18);
-        height: rem(18);
-        background-color: #ce6a6a;
-        // opacity: 0;
     }
 
     input:checked~.car-booking-agree--checkbox {
@@ -213,5 +221,103 @@
 
     @include sm {
         display: none;
+    }
+}
+
+.car-booking-guest {
+    display: block;
+    margin-top: rem(30);
+
+    @include sm {
+        margin-top: rem(20);
+    }
+
+    &__title {
+        font-size: rem(26);
+        font-weight: 600;
+
+        @include sm {
+            font-size: rem(20);
+        }
+    }
+
+    &__info {
+        margin-top: rem(20);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: rem(10);
+
+        @include md {
+            grid-template-columns: 1fr;
+        }
+
+        input::placeholder {
+            color: $color-text-gray;
+            font-family: $font-base;
+            font-size: rem(15);
+            font-weight: 300;
+
+            @include sm {
+                font-size: rem(14);
+            }
+        }
+
+        textarea::placeholder {
+            color: $color-text-gray;
+            font-family: $font-base;
+            font-size: rem(15);
+            font-weight: 300;
+
+            @include sm {
+                font-size: rem(14);
+            }
+        }
+
+        &--input {
+            padding: rem(15);
+            font-family: $font-base;
+            font-size: rem(16);
+            color: $color-text-black;
+            border-radius: rem(10);
+            border: none;
+            background-color: $bg-gray;
+            outline: none;
+
+            &:focus {
+                border: 1px solid #ee643a6f;
+                padding: rem(14);
+            }
+
+            @include sm {
+                font-size: rem(15);
+            }
+        }
+
+        &--comment {
+            grid-column: 1 / span 2;
+            font-family: $font-base;
+            font-size: rem(16);
+            color: $color-text-black;
+            border-radius: rem(10);
+            border: none;
+            background-color: $bg-gray;
+            padding: rem(15);
+            outline: none;
+            resize: none;
+
+            &:focus {
+                border: 1px solid #ee643a6f;
+                padding: rem(14);
+            }
+
+            @include md {
+                grid-column: auto;
+            }
+
+            @include sm {
+                font-size: rem(15);
+            }
+        }
     }
 }

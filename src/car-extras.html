@@ -137,7 +137,7 @@
               </p>
             </div>
           </div>
-          <div class="car-booking-divider"></div>
+          <!-- <div class="divider"></div> -->
           <!-- additional services -->
           <section class="car-booking-add-services">
             <h2 class="car-booking-add-services__title">Additional services</h2>
@@ -227,7 +227,50 @@
               </li>
             </ul>
           </section>
-          <div class="car-booking-divider"></div>
+          <!-- <div class="divider"></div> -->
+          <!-- guest's info -->
+          <section class="car-booking-guest">
+            <h2 class="car-booking-guest__title">Your data</h2>
+            <div class="car-booking-guest__info">
+              <input
+                type="text"
+                name="guest-name"
+                id="guest-name"
+                placeholder="Your name"
+                class="car-booking-guest__info--input"
+              />
+              <input
+                type="text"
+                name="guest-surname"
+                id="guest-surname"
+                placeholder="Your surname"
+                class="car-booking-guest__info--input"
+              />
+              <input
+                type="tel"
+                name="guest-phone"
+                id="guest-phone"
+                placeholder="Your phone number"
+                class="car-booking-guest__info--input"
+              />
+              <input
+                type="email"
+                name="guest-email"
+                id="guest-email"
+                placeholder="Your email"
+                class="car-booking-guest__info--input"
+              />
+              <textarea
+                name="guest-comment"
+                id="guest-comment"
+                placeholder="Your comment"
+                rows="4"
+                class="car-booking-guest__info--comment"
+                maxlength="400"
+              ></textarea>
+            </div>
+          </section>
+          <!-- agreement to rent -->
           <label class="car-booking-agree" for="car-booking-agree">
             <input
               type="checkbox"
