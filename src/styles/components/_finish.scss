@@ -1,0 +1,202 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../functions' as *;
+
+
+.finish-booking-info {
+    width: 50%;
+
+    @include md {
+        width: 100%;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        // background-color: $bg-gray;
+        max-width: rem(450);
+        margin-left: auto;
+
+        p {
+            margin: 0;
+        }
+
+        @include md {
+            max-width: 100%;
+        }
+    }
+
+    &__img {
+        width: rem(140);
+        align-self: center;
+    }
+
+    &__headline {
+        font-size: rem(24);
+        padding-top: rem(20);
+
+        @include sm {
+            font-size: rem(18)
+        }
+    }
+
+    &__description {
+        padding-top: rem(10);
+        font-size: rem(17);
+        font-weight: 300;
+
+        @include sm {
+            font-size: rem(15)
+        }
+    }
+
+    &__price {
+        font-size: rem(20);
+        font-weight: 600;
+        padding-top: rem(20);
+
+        @include sm {
+            font-size: rem(18)
+        }
+
+        span {
+            font-size: rem(26);
+            font-weight: 600;
+            color: $color-primary;
+            padding-left: rem(150);
+
+            @include sm {
+                font-size: rem(22);
+                padding-left: rem(50);
+            }
+        }
+    }
+
+    &__date {
+        padding-top: rem(20);
+        font-size: rem(18);
+        font-weight: 600;
+
+        @include sm {
+            font-size: rem(18)
+        }
+
+        span {
+            font-size: rem(18);
+            font-weight: 300;
+
+            @include sm {
+                font-size: rem(16)
+            }
+        }
+    }
+
+    &__location {
+        font-size: rem(18);
+        font-weight: 300;
+        padding-top: rem(10);
+
+        @include sm {
+            font-size: rem(16)
+        }
+    }
+
+    &__car {
+        padding-top: rem(20);
+        font-size: rem(18);
+        font-weight: 600;
+
+        @include sm {
+            font-size: rem(18)
+        }
+    }
+
+    &__model {
+        font-size: rem(18);
+        font-weight: 300;
+        padding-top: rem(10);
+
+        @include sm {
+            font-size: rem(16)
+        }
+    }
+
+    &__button {
+        width: rem(200);
+        margin-top: rem(30);
+
+        @include sm {
+            width: 100%;
+        }
+    }
+}
+
+.finish-booking-reminder {
+    width: 50%;
+
+    @include md {
+        width: 100%;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        background-color: $bg-gray;
+        padding: rem(50);
+        max-width: rem(450);
+        margin-top: rem(50);
+
+        @include md {
+            max-width: 100%;
+            padding: rem(30);
+        }
+
+        @include sm {
+            margin-top: rem(20);
+        }
+    }
+
+    &__title {
+        font-size: rem(20);
+
+        @include sm {
+            font-size: rem(18)
+        }
+    }
+
+    &__list {
+        @include list-reset;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: rem(20);
+
+        @include md {
+            justify-content: space-evenly;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        &-img {
+            @include sm {
+                width: rem(60);
+                height: rem(60);
+            }
+        }
+
+        &-name {
+            text-align: center;
+
+            @include sm {
+                font-size: rem(14);
+            }
+        }
+
+    }
+}

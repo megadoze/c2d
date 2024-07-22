@@ -189,78 +189,6 @@
     }
 }
 
-.car-booking-agree {
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    margin: rem(20) 0 rem(30);
-    gap: rem(8);
-    cursor: pointer;
-
-    @include sm {
-        align-items: flex-start;
-    }
-
-    a {
-        color: $color-primary;
-        text-decoration: none;
-    }
-
-    input[type="checkbox"] {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-    }
-
-    &--checkbox {
-        cursor: pointer;
-        width: 20px;
-        height: 20px;
-        border: 1px solid $color-primary;
-        border-radius: rem(3);
-        flex-shrink: 0;
-
-        &:checked {
-            background-color: $color-primary;
-
-            &::after {
-                content: '';
-                background-image: url('assets/images/icons/icon-check.svg');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                display: block;
-                width: rem(19);
-                height: rem(19);
-
-                @include sm {
-                    width: 17px;
-                    height: 17px;
-                }
-            }
-        }
-
-        @include sm {
-            width: 18px;
-            height: 18px;
-        }
-    }
-
-    input:checked~.car-booking-agree--checkbox {
-        background-color: #4ca230;
-    }
-}
-
-.button--size-240px {
-    width: rem(240);
-    align-self: center;
-    margin-bottom: rem(30);
-
-    @include sm {
-        display: none;
-    }
-}
-
 .car-booking-guest {
     display: block;
     margin-top: rem(30);
@@ -356,5 +284,77 @@
                 font-size: rem(16);
             }
         }
+    }
+}
+
+.car-booking-agree {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: rem(20) 0 rem(30);
+    gap: rem(8);
+    cursor: pointer;
+
+    @include sm {
+        align-items: flex-start;
+    }
+
+    a {
+        color: $color-primary;
+        text-decoration: none;
+    }
+
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    &--checkbox {
+        cursor: pointer;
+        width: 19px;
+        height: 19px;
+        border: 1px solid $color-primary;
+        border-radius: rem(3);
+        flex-shrink: 0;
+
+        &:checked {
+            background-color: $color-primary;
+
+            &::after {
+                content: '';
+                background-image: url('assets/images/icons/icon-check.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: block;
+                width: rem(18);
+                height: rem(18);
+
+                @include sm {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+
+        @include sm {
+            width: 17px;
+            height: 17px;
+        }
+    }
+
+    input:checked~.car-booking-agree--checkbox {
+        background-color: #4ca230;
+    }
+}
+
+.button--size-240px {
+    width: rem(240);
+    align-self: center;
+    margin-bottom: rem(30);
+
+    @include sm {
+        display: none;
     }
 }
