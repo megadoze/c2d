@@ -2490,6 +2490,11 @@ h4 {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
+  color: white;
+  --form-control-color: white;
+  place-content: center;
+  margin: 0;
+  font: inherit;
 }
 .car-booking-agree--checkbox {
   cursor: pointer;
@@ -2515,7 +2520,7 @@ h4 {
 }
 @media screen and (max-width: 48rem) {
   .car-booking-agree--checkbox:checked::after {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 48rem) {

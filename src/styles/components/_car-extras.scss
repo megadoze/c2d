@@ -206,9 +206,15 @@
         text-decoration: none;
     }
 
-    input[type=checkbox] {
+    input[type='checkbox'] {
         appearance: none;
         -webkit-appearance: none;
+        color: white;
+        --form-control-color: white;
+        place-content: center;
+        margin: 0;
+        font: inherit;
+        // color: currentColor;
     }
 
     &--checkbox {
@@ -234,7 +240,7 @@
                 color: white;
 
                 @include sm {
-                    font-size: 14px;
+                    font-size: 12px;
                 }
             }
         }
