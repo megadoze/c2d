@@ -2487,12 +2487,13 @@ h4 {
   text-decoration: none;
 }
 .car-booking-agree input[type=checkbox] {
-  -moz-appearance: none;
-       appearance: none;
-  -webkit-appearance: none;
   place-content: center;
   font: inherit;
   color: currentColor;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
 }
 .car-booking-agree--checkbox {
   cursor: pointer;
@@ -2515,19 +2516,18 @@ h4 {
   font-family: "Epilogue", sans-serif;
   font-size: 18px;
   color: white;
-  -webkit-color: white;
 }
 @media screen and (max-width: 48rem) {
   .car-booking-agree--checkbox:checked::after {
     font-size: 12px;
     color: white;
-    -webkit-color: white;
+    stroke: white;
   }
 }
 @media screen and (max-width: 48rem) {
   .car-booking-agree--checkbox {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
   }
 }
 .car-booking-agree input:checked ~ .car-booking-agree--checkbox {
