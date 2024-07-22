@@ -2814,6 +2814,7 @@ h4 {
 @media screen and (max-width: 48rem) {
   .finish-booking-reminder__container {
     margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 }
 .finish-booking-reminder__title {
