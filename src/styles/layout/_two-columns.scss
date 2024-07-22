@@ -16,4 +16,10 @@
         gap: 0;
         margin-top: rem(10);
     }
+
+    &--finish {
+        @include sm {
+            margin-top: rem(20);
+        }
+    }
 }

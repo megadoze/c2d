@@ -36,17 +36,19 @@
         padding-top: rem(20);
 
         @include sm {
-            font-size: rem(18)
+            font-size: rem(20);
+            text-align: center;
         }
     }
 
     &__description {
         padding-top: rem(10);
-        font-size: rem(17);
+        font-size: rem(18);
         font-weight: 300;
 
         @include sm {
-            font-size: rem(15)
+            font-size: rem(16);
+            text-align: center;
         }
     }
 
@@ -56,7 +58,7 @@
         padding-top: rem(20);
 
         @include sm {
-            font-size: rem(18)
+            font-size: rem(16)
         }
 
         span {
@@ -72,18 +74,19 @@
         }
     }
 
-    &__date {
+    &__pickup {
         padding-top: rem(20);
         font-size: rem(18);
         font-weight: 600;
 
         @include sm {
-            font-size: rem(18)
+            font-size: rem(16)
         }
 
         span {
             font-size: rem(18);
             font-weight: 300;
+            padding-left: rem(10);
 
             @include sm {
                 font-size: rem(16)
@@ -142,9 +145,10 @@
         display: flex;
         flex-direction: column;
         background-color: $bg-gray;
-        padding: rem(50);
+        border-radius: rem(20);
+        padding: rem(40);
         max-width: rem(450);
-        margin-top: rem(50);
+        margin-top: rem(64);
 
         @include md {
             max-width: 100%;
