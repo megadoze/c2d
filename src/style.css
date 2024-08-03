@@ -2002,7 +2002,7 @@ h4 {
 }
 .car-content__img {
   width: 100%;
-  max-height: 29rem;
+  max-height: 28.6875rem;
   aspect-ratio: 4/3;
   -o-object-fit: cover;
      object-fit: cover;
@@ -2211,7 +2211,7 @@ h4 {
 .car-booking-info {
   flex-shrink: 3;
   max-width: 400px;
-  max-height: 56.75rem;
+  max-height: 58rem;
   position: sticky;
   top: -3.25rem;
   margin-bottom: 20rem;
