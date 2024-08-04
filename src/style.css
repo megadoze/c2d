@@ -1849,12 +1849,13 @@ h4 {
   overflow: hidden;
   max-width: 87.5rem;
   height: 18.75rem;
+  border-radius: 0.9375rem;
 }
 
 .map {
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  border-radius: 1.25rem;
+  border-radius: 0.9375rem;
   margin: -2px;
 }
 
