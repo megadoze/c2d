@@ -1393,7 +1393,7 @@ h4 {
   margin: 0;
 }
 .news-card__date {
-  padding: 0.625rem 0;
+  padding: 0.625rem 0 0.3125rem;
 }
 .news-card__title {
   font-size: 1.25rem;
